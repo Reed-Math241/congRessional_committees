@@ -1,0 +1,41 @@
+---
+title: "Congressional Committee Data Wrangling"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+```{r}
+# Load libraries here
+library(readr)
+library(here)
+library(dplyr)
+library(tidyverse)
+```
+
+
+## Loading the data
+
+```{r}
+library(readr)
+committee_membership_current <- read_csv(here("Congressional Committee Shiny/committee-membership-current.csv"))
+View(committee_membership_current)
+
+committees_current <- read_csv(here("Congressional Committee Shiny/committees-current.csv"))
+View(committees_current)
+```
+
+## Make the column with the key in committees_current
+
+```{r}
+committees_current %>%
+  select(thomas_id, sub_thomas_id) %>%
+  if(!is.na(sub_thomas_id)) {
+      mutate(key = paste(thomas_id, sub_thomas_id, sep = ""))
+  } else {
+    mutate(key = thomas_id)
+  }
+```
+
