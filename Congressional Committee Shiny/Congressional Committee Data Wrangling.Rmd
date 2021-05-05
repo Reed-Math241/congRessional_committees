@@ -44,7 +44,7 @@ committees_current2 <- committees_current %>%
 
 ```{r}
 committees_current2 <- committees_current2 %>%
-  select(name, sub_name, key) %>%
+  select(name, sub_name, key, type) %>%
   rename(com_name = name)
 
 committees <- left_join(committee_membership_current, committees_current2, by = c("thomas_id" = "key"))
@@ -73,13 +73,51 @@ nodes <- left_join(committee_nodes, committee_names, by = "thomas_id") %>%
 #names(nodes) <- NULL
 #nodes
 ```
-## Make congressperson have the affiliation data
+## Get affiliation data for gender
 
 ```{r}
-# Join from committees: party, rank, chamber (saved as "type" in committees_current), leadership (title)
 # Need to grab gender :(
-congressperson %>%
+
+one16 <- read_csv("116_cong.csv")
+one16 <- one16 %>%
+  rename(name = officialFullName)
+
+congressperson1 <- congressperson %>%
   rowid_to_column("id")
+  
+congressperson_gender <- left_join(congressperson1, one16, by = c("label" = "name"))
+
+gender <- read_csv("gender.csv")
+
+gender <- gender %>%
+  mutate(gender = case_when(gender == 'M' ~ 0,
+                            gender == 'F' ~ 1))
+gender
+```
+```{r}
+# Join from committees: party, rank, chamber (saved as "type" in committees_current), leadership (title)
+committees_chamber <- committees %>%
+  drop_na(type) %>%
+  distinct(name, .keep_all = TRUE) %>%
+  full_join(congressperson1, by = c("name" = "label")) %>%
+  select(name, type, id)
+
+# Side note: majority is Republican
+committees_party <- committees %>%
+  full_join(congressperson1, by = c("name" = "label")) %>%
+  select(name, id, party) %>%
+  mutate(party = case_when(party == "majority" ~ 0,
+                           party == "minority" ~ 1))
+
+committees_rank <- committees %>%
+  full_join(congressperson1, by = c("name" = "label")) %>%
+  select(name, id, rank)
+
+committees %>%
+  full_join(congressperson1, by = c("name" = "label")) %>%
+  select(name, id, title) %>%
+  mutate(title = case_when(title %in% c("Chair", "Ranking Member") ~ 1,
+                           is.na(title) == TRUE ~ 0))
 ```
 
 

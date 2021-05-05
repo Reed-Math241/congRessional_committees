@@ -1,0 +1,480 @@
+id,label,gender
+11,Adam B. Schiff,M
+297,Adam Kinzinger,M
+25,Adam Smith,M
+364,Adrian Smith,M
+429,Al Franken,M
+177,Al Green,M
+252,Alan S. Lowenthal,M
+244,Albio Sires,M
+354,Alcee L. Hastings,M
+197,Alexander X. Mooney,M
+65,Alma S. Adams,F
+251,Ami Bera,M
+397,Amy Klobuchar,F
+14,André Carson,M
+159,Andy Barr,M
+85,Andy Harris,M
+435,"Angus S. King, Jr.",M
+59,Ann M. Kuster,F
+158,Ann Wagner,F
+309,Anna G. Eshoo,F
+329,Aumua Amata Coleman Radewagen,F
+34,Austin Scott,M
+272,Barbara Comstock,F
+98,Barbara Lee,F
+276,Barry Loudermilk,M
+318,Ben Ray Luján,M
+394,Ben Sasse,M
+387,Benjamin L. Cardin,M
+278,Bennie G. Thompson,M
+474,Bernard Sanders,M
+141,Beto O'Rourke,M
+99,Betty McCollum,F
+396,Bill Cassidy,M
+302,Bill Flores,M
+182,Bill Foster,M
+151,Bill Huizenga,M
+202,Bill Johnson,M
+445,Bill Nelson,M
+205,Bill Pascrell Jr.,M
+149,Bill Posey,M
+112,Bill Shuster,M
+300,Billy Long,M
+150,Blaine Luetkemeyer,M
+261,Blake Farenthold,M
+440,Bob Corker,M
+33,Bob Gibbs,M
+28,Bob Goodlatte,M
+308,Bobby L. Rush,M
+269,Bonnie Watson Coleman,F
+9,Brad R. Wenstrup,M
+172,Brad Sherman,M
+120,Bradley Byrne,M
+268,Brenda L. Lawrence,F
+256,Brendan F. Boyle,M
+213,Brett Guthrie,M
+344,Brian Babin,M
+247,Brian Higgins,M
+419,Brian Schatz,M
+165,Bruce Poliquin,M
+200,Bruce Westerman,M
+101,C. A. Dutch Ruppersberger,M
+217,Carlos Curbelo,M
+170,Carolyn B. Maloney,F
+293,Cathy McMorris Rodgers,F
+280,Cedric L. Richmond,M
+404,Charles E. Schumer,M
+81,"Charles J. ""Chuck"" Fleischmann",M
+76,Charles W. Dent,M
+104,Chellie Pingree,F
+61,Cheri Bustos,F
+305,Chris Collins,M
+10,Chris Stewart,M
+203,Chris Van Hollen,M
+418,Christopher A. Coons,M
+228,Christopher H. Smith,M
+463,Christopher Murphy,M
+407,Chuck Grassley,M
+444,Claire McCaskill,F
+50,Collin C. Peterson,M
+477,Cory A. Booker,M
+475,Cory Gardner,M
+48,Dan Newhouse,M
+229,Dana Rohrabacher,F
+348,Daniel Lipinski,M
+242,Daniel M. Donovan Jr.,M
+467,Daniel Sullivan,M
+183,Daniel T. Kildee,M
+343,Daniel Webster,M
+383,Danny K. Davis,M
+330,Darin LaHood,M
+233,Darrell E. Issa,M
+195,Dave Brat,M
+240,David A. Trott,M
+296,David B. McKinley,M
+95,David E. Price,M
+362,David G. Reichert,M
+84,David G. Valadao,M
+321,David Loebsack,M
+250,David N. Cicilline,M
+83,David P. Joyce,M
+211,David P. Roe,M
+442,David Perdue,M
+45,David Rouzer,M
+162,David Schweikert,M
+51,David Scott,M
+87,David Young,M
+441,Dean Heller,M
+465,Deb Fischer,F
+208,Debbie Dingell,F
+410,Debbie Stabenow,F
+102,Debbie Wasserman Schultz,F
+156,Dennis A. Ross,M
+187,Denny Heck,M
+105,Derek Kilmer,M
+1,Devin Nunes,M
+311,Diana DeGette,F
+191,Diane Black,F
+416,Dianne Feinstein,F
+349,Dina Titus,F
+325,Don Young,M
+281,Donald M. Payne Jr.,M
+142,Donald Norcross,M
+334,Donald S. Beyer Jr.,M
+315,Doris O. Matsui,F
+336,Doug Collins,M
+39,Doug LaMalfa,M
+113,Doug Lamborn,M
+115,Duncan Hunter,M
+380,Earl Blumenauer,M
+215,"Earl L. ""Buddy"" Carter",M
+181,Ed Perlmutter,M
+347,Eddie Bernice Johnson,F
+476,Edward J. Markey,M
+146,Edward R. Royce,M
+267,Eleanor Holmes Norton,F
+24,Elijah E. Cummings,M
+243,Eliot L. Engel,M
+123,Elise M. Stefanik,F
+350,Elizabeth H. Esty,F
+449,Elizabeth Warren,F
+178,Emanuel Cleaver,M
+35,"Eric A. ""Rick"" Crawford",M
+17,Eric Swalwell,M
+366,Erik Paulsen,M
+88,Evan H. Jenkins,M
+335,F. James Sensenbrenner Jr.,M
+57,Filemon Vela,M
+4,Frank A. LoBiondo,M
+29,Frank D. Lucas,M
+307,Frank Pallone Jr.,M
+284,Fred Upton,M
+222,Frederica S. Wilson,F
+314,G. K. Butterfield,M
+328,Garret Graves,M
+400,Gary C. Peters,M
+199,Gary J. Palmer,M
+310,Gene Green,M
+371,George Holding,M
+245,Gerald E. Connolly,M
+198,Glenn Grothman,M
+32,Glenn Thompson,M
+331,Grace F. Napolitano,F
+253,Grace Meng,F
+287,Greg Walden,M
+271,Gregg Harper,M
+221,Gregorio Kilili Camacho Sablan,M
+173,Gregory W. Meeks,M
+299,Gus M. Bilirakis,M
+179,Gwen Moore,F
+298,H. Morgan Griffith,M
+225,Hakeem S. Jeffries,M
+66,Harold Rogers,M
+430,Heidi Heitkamp,F
+137,"Henry C. ""Hank"" Johnson Jr.",M
+103,Henry Cuellar,M
+7,Ileana Ros-Lehtinen,F
+167,J. French Hill,M
+437,Jack Reed,M
+15,Jackie Speier,F
+42,Jackie Walorski,F
+82,Jaime Herrera Beutler,F
+12,James A. Himes,M
+201,James B. Renacci,M
+414,James E. Risch,M
+424,James Lankford,M
+464,James M. Inhofe,M
+55,James P. McGovern,M
+130,James R. Langevin,M
+313,Janice D. Schakowsky,F
+332,Jared Huffman,M
+220,Jared Polis,M
+257,Jason Chaffetz,M
+372,Jason Smith,M
+390,Jeanne Shaheen,F
+145,Jeb Hensarling,M
+38,Jeff Denham,M
+235,Jeff Duncan,M
+438,Jeff Flake,M
+80,Jeff Fortenberry,M
+461,Jeff Merkley,M
+415,Jeff Sessions,M
+339,Jerrold Nadler,M
+317,Jerry McNerney,M
+426,Jerry Moran,M
+119,Jim Bridenstine,M
+132,Jim Cooper,M
+52,Jim Costa,M
+20,Jim Jordan,M
+18,Joaquin Castro,M
+265,Jody B. Hice,M
+285,Joe Barton,M
+134,Joe Courtney,M
+448,Joe Donnelly,M
+468,"Joe Manchin, III",M
+109,Joe Wilson,M
+204,John A. Yarmuth,M
+71,John Abney Culberson,M
+358,John B. Larson,M
+420,John Barrasso,M
+386,John Boozman,M
+338,John Conyers Jr.,M
+413,John Cornyn,M
+136,John Garamendi,M
+423,John Hoeven,M
+258,John J. Duncan Jr.,M
+184,John K. Delaney,M
+275,John Katko,M
+375,John Lewis,M
+421,John McCain,M
+316,John P. Sarbanes,M
+72,John R. Carter,M
+47,John R. Moolenaar,M
+277,John Ratcliffe,M
+286,John Shimkus,M
+453,John Thune,M
+417,Johnny Isakson,M
+427,Jon Tester,M
+452,Joni Ernst,F
+93,José E. Serrano,M
+382,Joseph Crowley,M
+323,Joseph P. Kennedy III,M
+186,Joyce Beatty,F
+188,Juan Vargas,M
+341,Judy Chu,F
+351,Julia Brownley,F
+259,Justin Amash,M
+2,K. Michael Conaway,M
+248,Karen Bass,F
+226,Katherine M. Clark,F
+282,Kathleen M. Rice,F
+206,Kathy Castor,F
+69,Kay Granger,F
+180,Keith Ellison,M
+160,Keith J. Rothfus,M
+263,Ken Buck,M
+73,Ken Calvert,M
+357,Kenny Marchant,M
+359,Kevin Brady,M
+306,Kevin Cramer,M
+78,Kevin Yoder,M
+446,Kirsten E. Gillibrand,F
+370,Kristi L. Noem,F
+322,Kurt Schrader,M
+185,Kyrsten Sinema,F
+457,Lamar Alexander,M
+274,Lamar Smith,M
+301,Larry Bucshon,M
+241,Lee M. Zeldin,M
+294,Leonard Lance,M
+26,Linda T. Sánchez,F
+458,Lindsey Graham,M
+422,Lisa Murkowski,F
+378,Lloyd Doggett,M
+254,Lois Frankel,F
+214,Lou Barletta,M
+326,Louie Gohmert,M
+353,Louise McIntosh Slaughter,F
+96,Lucille Roybal-Allard,F
+342,Luis V. Gutiérrez,M
+161,Luke Messer,M
+365,Lynn Jenkins,F
+107,Mac Thornberry,M
+133,Madeleine Z. Bordallo,F
+139,Marc A. Veasey,M
+54,Marcia L. Fudge,F
+431,Marco Rubio,M
+91,Marcy Kaptur,F
+428,Maria Cantwell,F
+75,Mario Diaz-Balart,M
+227,Mark DeSaulnier,M
+86,Mark E. Amodei,M
+239,Mark Meadows,M
+207,Mark Pocan,M
+434,Mark R. Warner,M
+194,Mark Sanford,M
+224,Mark Takano,M
+264,Mark Walker,M
+303,Markwayne Mullin,M
+290,Marsha Blackburn,F
+124,Martha McSally,F
+22,Martha Roby,F
+399,Martin Heinrich,M
+106,Matt Cartwright,M
+169,Maxine Waters,F
+436,Mazie K. Hirono,F
+166,Mia B. Love,F
+471,Michael B. Enzi,M
+289,Michael C. Burgess,M
+174,Michael E. Capuano,M
+455,Michael F. Bennet,M
+312,Michael F. Doyle,M
+70,Michael K. Simpson,M
+8,Michael R. Turner,M
+231,Michael T. McCaul,M
+58,Michelle Lujan Grisham,F
+154,Mick Mulvaney,M
+216,Mike Bishop,M
+44,Mike Bost,M
+116,Mike Coffman,M
+408,Mike Crapo,M
+369,Mike Kelly,M
+392,Mike Lee,M
+6,Mike Pompeo,M
+16,Mike Quigley,M
+31,Mike Rogers,M
+466,Mike Rounds,M
+379,Mike Thompson,M
+337,Mimi Walters,F
+433,Mitch McConnell,M
+117,Mo Brooks,M
+135,Niki Tsongas,F
+90,Nita M. Lowey,F
+283,Norma J. Torres,F
+171,Nydia M. Velázquez,F
+406,Orrin G. Hatch,M
+402,Pat Roberts,M
+405,Patrick J. Leahy,M
+361,Patrick J. Tiberi,M
+469,Patrick J. Toomey,M
+356,Patrick Meehan,M
+147,Patrick T. McHenry,M
+459,Patty Murray,F
+260,Paul A. Gosar,M
+118,Paul Cook,M
+411,Paul Ryan,M
+319,Paul Tonko,M
+63,Pete Aguilar,M
+295,Pete Olson,M
+352,Pete Sessions,M
+346,Peter A. DeFazio,M
+21,Peter J. Roskam,M
+92,Peter J. Visclosky,M
+3,Peter T. King,M
+270,Peter Welch,M
+46,Ralph Lee Abraham,M
+479,Rand Paul,M
+155,Randy Hultgren,M
+236,Randy K. Weber Sr.,M
+219,Raúl M. Grijalva,M
+327,Raúl R. Labrador,M
+333,Raul Ruiz,M
+447,Richard Blumenthal,M
+385,Richard Burr,M
+456,Richard C. Shelby,M
+376,Richard E. Neal,M
+304,Richard Hudson,M
+460,Richard J. Durbin,M
+60,Richard M. Nolan,M
+131,Rick Larsen,M
+43,Rick W. Allen,M
+110,Rob Bishop,M
+472,Rob Portman,M
+193,Rob Woodall,M
+128,Robert A. Brady,M
+391,Robert Aderholt,M
+68,Robert B. Aderholt,M
+218,"Robert C. ""Bobby"" Scott",M
+292,Robert E. Latta,M
+114,Robert J. Wittman,M
+470,Robert Menendez,M
+398,"Robert P. Casey, Jr.",M
+157,Robert Pittenger,M
+255,Robin L. Kelly,F
+196,Rod Blum,M
+40,Rodney Davis,M
+67,Rodney P. Frelinghuysen,M
+384,Roger F. Wicker,M
+164,Roger Williams,M
+238,Ron DeSantis,M
+473,Ron Johnson,M
+381,Ron Kind,M
+409,Ron Wyden,M
+94,Rosa L. DeLauro,F
+401,Roy Blunt,M
+143,Ruben Gallego,M
+345,Ryan A. Costello,M
+122,Ryan K. Zinke,M
+121,Sam Graves,M
+360,Sam Johnson,M
+412,Sander Levin,M
+374,Sander M. Levin,M
+97,Sanford D. Bishop Jr.,M
+36,Scott DesJarlais,M
+138,Scott H. Peters,M
+237,Scott Perry,M
+163,Scott R. Tipton,M
+152,Sean P. Duffy,M
+62,Sean Patrick Maloney,M
+144,Seth Moulton,M
+279,Sheila Jackson Lee,F
+388,Sheldon Whitehouse,M
+403,Shelley Moore Capito,F
+454,Sherrod Brown,M
+64,Stacey E. Plaskett,F
+176,Stephen F. Lynch,M
+125,Stephen Knight,M
+148,Stevan Pearce,M
+230,Steve Chabot,M
+340,Steve Cohen,M
+425,Steve Daines,M
+30,Steve King,M
+127,Steve Russell,M
+291,Steve Scalise,M
+153,Steve Stivers,M
+79,Steve Womack,M
+89,Steven M. Palazzo,M
+129,Susan A. Davis,F
+432,Susan M. Collins,F
+23,Susan W. Brooks,F
+56,Suzan K. DelBene,F
+223,Suzanne Bonamici,F
+462,Tammy Baldwin,F
+27,Tammy Duckworth,F
+395,Ted Cruz,M
+209,Ted Lieu,M
+232,Ted Poe,M
+41,Ted S. Yoho,M
+13,Terri A. Sewell,F
+451,Thad Cochran,M
+246,Theodore E. Deutch,M
+443,Thom Tillis,M
+5,Thomas J. Rooney,M
+126,Thomas MacArthur,M
+262,Thomas Massie,M
+478,Thomas R. Carper,M
+450,Tim Kaine,M
+288,Tim Murphy,M
+100,Tim Ryan,M
+439,Tim Scott,M
+212,Tim Walberg,M
+53,Timothy J. Walz,M
+368,Todd C. Young,M
+192,Todd Rokita,M
+74,Tom Cole,M
+393,Tom Cotton,M
+168,Tom Emmer,M
+77,Tom Graves,M
+234,Tom Marino,M
+190,Tom McClintock,M
+189,Tom Price,M
+367,Tom Reed,M
+373,Tom Rice,M
+389,Tom Udall,M
+324,Tony Cárdenas,M
+111,Trent Franks,M
+49,Trent Kelly,M
+19,Trey Gowdy,M
+140,Tulsi Gabbard,F
+363,Vern Buchanan,M
+37,Vicky Hartzler,F
+210,Virginia Foxx,F
+108,Walter B. Jones,M
+355,Warren Davidson,M
+266,Will Hurd,M
+249,William R. Keating,M
+175,Wm. Lacy Clay,M
+377,Xavier Becerra,M
+320,Yvette D. Clarke,F
+273,Zoe Lofgren,F
