@@ -13,6 +13,8 @@ library(readr)
 library(here)
 library(dplyr)
 library(tidyverse)
+library(stringr)
+library(statnet)
 ```
 
 
@@ -28,14 +30,151 @@ View(committees_current)
 ```
 
 ## Make the column with the key in committees_current
+- Otherwise I will not be able to link the names of the committees
 
 ```{r}
-committees_current %>%
-  select(thomas_id, sub_thomas_id) %>%
-  if(!is.na(sub_thomas_id)) {
-      mutate(key = paste(thomas_id, sub_thomas_id, sep = ""))
-  } else {
-    mutate(key = thomas_id)
-  }
+committees_current2 <- committees_current %>%
+  mutate(key = paste(thomas_id, sub_thomas_id, sep = "")) %>%
+  mutate(key = str_replace_all(key, 
+                               "NA",
+                               ""))
 ```
+
+## Join the dataframes together by the key! :) Hasn't proved super useful?
+
+```{r}
+committees_current2 <- committees_current2 %>%
+  select(name, sub_name, key) %>%
+  rename(com_name = name)
+
+committees <- left_join(committee_membership_current, committees_current2, by = c("thomas_id" = "key"))
+```
+
+
+## Set up the "edge list" (cheating a lil bit, as it is two mode and thus must have two distinct columns, but it works!)
+
+```{r}
+congressperson <- committees %>%
+  distinct(name) %>%
+  rename(label = name)
+
+committee_names <- committees %>%
+  distinct(thomas_id) %>%
+  rowid_to_column("id")
+
+committee_nodes <- committees %>%
+  select(name, thomas_id) %>%
+  arrange(name)
+
+nodes <- left_join(committee_nodes, committee_names, by = "thomas_id") %>%
+  select(-thomas_id) %>%
+  rename(committee = id)
+
+#names(nodes) <- NULL
+#nodes
+```
+## Make congressperson have the affiliation data
+
+```{r}
+# Join from committees: party, rank, chamber (saved as "type" in committees_current), leadership (title)
+# Need to grab gender :(
+congressperson %>%
+  rowid_to_column("id")
+```
+
+
+## Write to a csv
+```{r, eval = FALSE}
+write_csv(nodes, file = "committee_edge_list.csv")
+```
+
+
+## Turn it into a two mode network! (using `statnet`)
+
+```{r}
+com <- read.csv("committee_edge_list.csv", 
+                #directed = FALSE,
+                skip = 1,
+                header = FALSE)
+
+head(com)
+
+# With the four line script, below, we are saving all the unique names from the first column (first mode) into an object called “mode1”, and all the unique names from the second column (second mode) into an object called “mode2”
+mode1 <- unique(com[,1])
+mode2 <- unique(com[,2])
+length(mode1)
+## 479
+length(mode2)
+## 215
+
+net <- as.network(com, 
+                  bipartite=215,   # Number of nodes in the second mode (events)
+                  directed=FALSE)
+
+gplot(net, usearrows = FALSE)
+```
+
+
+## Split it into one-mode networks for the purpose of graphing + finding centrality measures (who holds power more significantly + why???). Can I graph the thing below?? hm
+
+```{r}
+bipartite_matrix <- as.matrix(net)
+
+#t(bipartite_matrix)
+
+event_matrix_prod <- bipartite_matrix %*% t(bipartite_matrix)
+
+diag(event_matrix_prod) <- 0
+
+event_matrix_prod
+
+gplot(event_matrix_prod)
+```
+
+## Further options: use one of the methods detailed at the bottom of the instructions (Yule's Q, Pearson Correlation, **Jaccard Similarity**), then use tnet or statnet to calculate the measures. I have, however, hit a wall for the night and will finish this part up tomorrow :)
+
+## Add the affiliation data/demographic characteristics
+- Have one masterdata set that has just the congresspeople (name) and dem info joined (gender, leadership, political party, rank, # of terms?)
+- To change this in the app, filter down the dataset (gender == 1), then the matrix + data produced will only graph those folks
+- Look how to color the `statnet` graphs. Can do this by mode, so there's probably an argument for that somewhere ???
+  - vertex.col does this. Says I should create a vector with the colors I want?? But I can't find example code ANYWHERE WHYYYYY
+  - Would it make more sense to make my network an igraph from the `statnet` it's currently in? Then I could make groups???? Ugh that's complicated too
+  - Think best solution is to make a vector from joining relevant info by name :(
+
+```{r}
+# Maybe this????
+# Media outlets are blue squares, audience nodes are orange circles:
+V(net2)$color <- c("steel blue", "orange")[V(net2)$type+1]
+V(net2)$shape <- c("square", "circle")[V(net2)$type+1]
+# Media outlets will have name labels, audience members will not:
+V(net2)$label <- ""
+V(net2)$label[V(net2)$type==F] <- nodes2$media[V(net2)$type==F]
+V(net2)$label.cex=.6
+V(net2)$label.font=2
+plot(net2, vertex.label.color="white", vertex.size=(2-V(net2)$type)*8)
+
+library(ggraph)
+ggraph(net, layout="lgl") +
+geom_edge_fan(color="gray50", width=0.8, alpha=0.5) +
+geom_node_point(color=V(net)$color, size=8) +
+theme_void()
+```
+
+## Can try `visNetwork`
+- Try this first PLEASE it looks so simple !!!!
+```{r}
+library('visNetwork')
+visNetwork(nodes, links)
+
+vis.nodes$color.background <- c("slategrey", "tomato", "gold")[nodes$media.type]
+```
+
+
+### In a new R Markdown file, make the STATIC output that we are interested in. This will help tremendously with making the outputs/inputs in the actual app :)
+
+
+
+
+
+
 
