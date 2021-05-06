@@ -258,9 +258,52 @@ vis.nodes$color.background <- c("slategrey", "tomato", "gold")[nodes$media.type]
 ```
 
 
-### In a new R Markdown file, make the STATIC output that we are interested in. This will help tremendously with making the outputs/inputs in the actual app :)
+## Centrality measures in `statnet`
 
+```{r}
+# First we need to binarize the network
 
+library(ade4) # If you have not already done so
+
+# I have a bipartite_matrix and net!
+bipartite_matrix <- as.matrix(net)  # Extract the matrix
+
+women_jaccard <- dist.binary(t(bipartite_matrix), 
+                             method=1, upper=TRUE, 
+                             diag = FALSE) # Method #1 is "Jaccard Index"
+event_jaccard <- dist.binary(bipartite_matrix, 
+                             method=1, upper=TRUE, 
+                             diag = FALSE) 
+
+women_jaccard <- as.matrix(women_jaccard)   
+diag(women_jaccard)<-0
+
+# women_jaccard          # Look at the matrix before you binarize
+jaccard_women <- ifelse(women_jaccard>0.95, 1, 0)     # Binarize
+
+# jaccard_women      # Take a look at the matrix if you like.
+
+jacc_women <- as.network(jaccard_women,    # Create a statnet network
+                         directed=FALSE)
+gplot(jacc_women,
+      usearrows = FALSE, 
+      displaylabels = TRUE)
+
+IDs <- jacc_women%v%"vertex.names"
+women_deg  <- degree(jacc_women)
+women_bet  <- betweenness(jacc_women)
+women_clos <- closeness(jacc_women,
+                        cmode="suminvdir")
+women_eig  <- evcent(jacc_women)
+
+women_cent_df <- data.frame(IDs, 
+                            women_deg, 
+                            women_bet, 
+                            women_clos, 
+                            women_eig)
+
+women_cent_df
+```
 
 
 
