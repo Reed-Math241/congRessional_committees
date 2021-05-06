@@ -160,7 +160,7 @@ congressperson_affiliation <- congressperson_affiliation %>%
          name = name.x)
 
 # ROBIN USE THIS CODE TO CONVERT THE ROW IN THE DATAFRAME TO A VECTOR TO USE IN THE GRAPHY GRAPH
-leadership_colors <- committees_leadership_colors[['title']]
+leadership_colors <- congressperson_affiliation[['title_color']]
 ```
 
 
@@ -211,7 +211,9 @@ diag(event_matrix_prod) <- 0
 event_matrix_prod
 
 # Will have to experiment with vertex.col to get this hecking thing to graph colors by my affiliation data
-gplot(event_matrix_prod, vertex.col = avector)
+
+# edge.lwd changes the thickness of the edges by the number of them
+gplot(event_matrix_prod, vertex.col = leadership_colors, thresh = 1, jitter = TRUE, usearrows = FALSE, vertex.cex = 2)
 
 ?gplot
 ```
