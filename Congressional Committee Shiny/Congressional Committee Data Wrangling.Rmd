@@ -94,8 +94,12 @@ gender <- gender %>%
                             gender == 'F' ~ 1))
 gender
 ```
+## Doing some thinking... where do I put this data? I could/probably should upload multiple CSVs...
+
 ```{r}
 # Join from committees: party, rank, chamber (saved as "type" in committees_current), leadership (title)
+
+# Will not be making a color vector for this one, as we will FILTER the dataset to only include what the user inputs using this dataframe :)
 committees_chamber <- committees %>%
   drop_na(type) %>%
   distinct(name, .keep_all = TRUE) %>%
@@ -113,11 +117,17 @@ committees_rank <- committees %>%
   full_join(congressperson1, by = c("name" = "label")) %>%
   select(name, id, rank)
 
-committees %>%
+committees_leadership <- committees %>%
   full_join(congressperson1, by = c("name" = "label")) %>%
   select(name, id, title) %>%
   mutate(title = case_when(title %in% c("Chair", "Ranking Member") ~ 1,
                            is.na(title) == TRUE ~ 0))
+
+committees_leadership_colors <- committees_leadership %>%
+  mutate(title = case_when(title == 1 ~ "blue",
+                           title == 0 ~ "pink"))
+
+leadership_colors <- committees_leadership_colors[['title']]
 ```
 
 
@@ -166,13 +176,17 @@ diag(event_matrix_prod) <- 0
 
 event_matrix_prod
 
-gplot(event_matrix_prod)
+# Will have to experiment with vertex.col to get this hecking thing to graph colors by my affiliation data
+gplot(event_matrix_prod, vertex.col = avector)
+
+?gplot
 ```
 
 ## Further options: use one of the methods detailed at the bottom of the instructions (Yule's Q, Pearson Correlation, **Jaccard Similarity**), then use tnet or statnet to calculate the measures. I have, however, hit a wall for the night and will finish this part up tomorrow :)
+- This can be done for my measures, and I can join the affiliation data to do the statistical calculations
 
 ## Add the affiliation data/demographic characteristics
-- Have one masterdata set that has just the congresspeople (name) and dem info joined (gender, leadership, political party, rank, # of terms?)
+- Have one master data set that has just the congresspeople (name) and dem info joined (gender, leadership, political party, rank, # of terms?)
 - To change this in the app, filter down the dataset (gender == 1), then the matrix + data produced will only graph those folks
 - Look how to color the `statnet` graphs. Can do this by mode, so there's probably an argument for that somewhere ???
   - vertex.col does this. Says I should create a vector with the colors I want?? But I can't find example code ANYWHERE WHYYYYY
