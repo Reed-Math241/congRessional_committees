@@ -82,19 +82,29 @@ one16 <- read_csv("116_cong.csv")
 one16 <- one16 %>%
   rename(name = officialFullName)
 
-congressperson1 <- congressperson %>%
+congressperson_affiliation <- congressperson %>%
   rowid_to_column("id")
   
-congressperson_gender <- left_join(congressperson1, one16, by = c("label" = "name"))
+congressperson_gender <- left_join(congressperson_affiliation, one16, by = c("label" = "name"))
 
 gender <- read_csv("gender.csv")
 
 gender <- gender %>%
   mutate(gender = case_when(gender == 'M' ~ 0,
                             gender == 'F' ~ 1))
-gender
+
+congressperson_affiliation <- inner_join(congressperson_affiliation, gender, by = "id")
+
+gender_color <- gender %>%
+  mutate(gender = case_when(gender == 0 ~ "blue",
+                            gender == 1 ~ "pink"))
+
+congressperson_affiliation <- inner_join(congressperson_affiliation, gender, by = "id")
+
+congressperson_affiliation <- congressperson_affiliation %>%
+  select(-label.x, - label.y, -label)
 ```
-## Doing some thinking... where do I put this data? I could/probably should upload multiple CSVs...
+## Doing some thinking... where do I put this data? Load the committees csv + gender csv and copy + paste this code?
 
 ```{r}
 # Join from committees: party, rank, chamber (saved as "type" in committees_current), leadership (title)
@@ -104,29 +114,52 @@ committees_chamber <- committees %>%
   drop_na(type) %>%
   distinct(name, .keep_all = TRUE) %>%
   full_join(congressperson1, by = c("name" = "label")) %>%
-  select(name, type, id)
+  select(type, id)
+
+congressperson_affiliation <- inner_join(congressperson_affiliation, committees_chamber, by = "id")
 
 # Side note: majority is Republican
 committees_party <- committees %>%
   full_join(congressperson1, by = c("name" = "label")) %>%
-  select(name, id, party) %>%
+  distinct(id, .keep_all = TRUE) %>%
+  select(id, party) %>%
   mutate(party = case_when(party == "majority" ~ 0,
                            party == "minority" ~ 1))
 
-committees_rank <- committees %>%
-  full_join(congressperson1, by = c("name" = "label")) %>%
-  select(name, id, rank)
+congressperson_affiliation <- inner_join(congressperson_affiliation, committees_party, by = "id")
+
+committees_party_colors <- committees_party %>%
+  mutate(party = case_when(party == 0 ~ "red",
+                           party == 1 ~ "blue"))
+
+congressperson_affiliation <- inner_join(congressperson_affiliation, committees_party_colors, by = "id")
 
 committees_leadership <- committees %>%
   full_join(congressperson1, by = c("name" = "label")) %>%
+  distinct(id, .keep_all = TRUE) %>%
   select(name, id, title) %>%
   mutate(title = case_when(title %in% c("Chair", "Ranking Member") ~ 1,
                            is.na(title) == TRUE ~ 0))
 
-committees_leadership_colors <- committees_leadership %>%
-  mutate(title = case_when(title == 1 ~ "blue",
-                           title == 0 ~ "pink"))
+congressperson_affiliation <- inner_join(congressperson_affiliation, committees_leadership, by = "id")
 
+committees_leadership_colors <- committees_leadership %>%
+  mutate(title = case_when(title == 1 ~ "purple",
+                           title == 0 ~ "gray"))
+
+congressperson_affiliation <- inner_join(congressperson_affiliation, committees_leadership_colors, by = "id")
+
+congressperson_affiliation <- congressperson_affiliation %>%
+  select(-name.y) %>%
+  rename(party_bin = party.x,
+         party_color = party.y,
+         title_bin = title.x,
+         title_color = title.y,
+         gender_bin = gender.x,
+         gender_color = gender.y,
+         name = name.x)
+
+# ROBIN USE THIS CODE TO CONVERT THE ROW IN THE DATAFRAME TO A VECTOR TO USE IN THE GRAPHY GRAPH
 leadership_colors <- committees_leadership_colors[['title']]
 ```
 
@@ -134,6 +167,7 @@ leadership_colors <- committees_leadership_colors[['title']]
 ## Write to a csv
 ```{r, eval = FALSE}
 write_csv(nodes, file = "committee_edge_list.csv")
+write_csv(congressperson_affiliation, file = "congressperson_affiliation.csv")
 ```
 
 
