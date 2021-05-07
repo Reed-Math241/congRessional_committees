@@ -1,480 +1,480 @@
 id,gender_bin,gender_color,type,party_bin,party_color,name,title_bin,title_color
-1,0,0,house,0,red,Devin Nunes,1,purple
-2,0,0,house,0,red,K. Michael Conaway,0,gray
-3,0,0,house,0,red,Peter T. King,0,gray
-4,0,0,house,0,red,Frank A. LoBiondo,0,gray
-5,0,0,house,0,red,Thomas J. Rooney,0,gray
-6,0,0,house,0,red,Mike Pompeo,0,gray
-7,1,1,house,0,red,Ileana Ros-Lehtinen,0,gray
-8,0,0,house,0,red,Michael R. Turner,0,gray
-9,0,0,house,0,red,Brad R. Wenstrup,0,gray
-10,0,0,house,0,red,Chris Stewart,0,gray
-11,0,0,house,1,blue,Adam B. Schiff,1,purple
-12,0,0,house,1,blue,James A. Himes,0,gray
-13,1,1,house,1,blue,Terri A. Sewell,0,gray
-14,0,0,house,1,blue,André Carson,0,gray
-15,1,1,house,1,blue,Jackie Speier,0,gray
-16,0,0,house,1,blue,Mike Quigley,0,gray
-17,0,0,house,1,blue,Eric Swalwell,0,gray
-18,0,0,house,1,blue,Joaquin Castro,0,gray
-19,0,0,house,0,red,Trey Gowdy,1,purple
-20,0,0,house,0,red,Jim Jordan,0,gray
-21,0,0,house,0,red,Peter J. Roskam,0,gray
-22,1,1,house,0,red,Martha Roby,0,gray
-23,1,1,house,0,red,Susan W. Brooks,0,gray
-24,0,0,house,1,blue,Elijah E. Cummings,1,purple
-25,0,0,house,1,blue,Adam Smith,0,gray
-26,1,1,house,1,blue,Linda T. Sánchez,0,gray
-27,1,1,house,1,blue,Tammy Duckworth,0,gray
-28,0,0,house,0,red,Bob Goodlatte,0,gray
-29,0,0,house,0,red,Frank D. Lucas,0,gray
-30,0,0,house,0,red,Steve King,0,gray
-31,0,0,house,0,red,Mike Rogers,0,gray
-32,0,0,house,0,red,Glenn Thompson,0,gray
-33,0,0,house,0,red,Bob Gibbs,0,gray
-34,0,0,house,0,red,Austin Scott,0,gray
-35,0,0,house,0,red,"Eric A. ""Rick"" Crawford",0,gray
-36,0,0,house,0,red,Scott DesJarlais,0,gray
-37,1,1,house,0,red,Vicky Hartzler,0,gray
-38,0,0,house,0,red,Jeff Denham,0,gray
-39,0,0,house,0,red,Doug LaMalfa,0,gray
-40,0,0,house,0,red,Rodney Davis,0,gray
-41,0,0,house,0,red,Ted S. Yoho,0,gray
-42,1,1,house,0,red,Jackie Walorski,0,gray
-43,0,0,house,0,red,Rick W. Allen,0,gray
-44,0,0,house,0,red,Mike Bost,0,gray
-45,0,0,house,0,red,David Rouzer,0,gray
-46,0,0,house,0,red,Ralph Lee Abraham,0,gray
-47,0,0,house,0,red,John R. Moolenaar,0,gray
-48,0,0,house,0,red,Dan Newhouse,0,gray
-49,0,0,house,0,red,Trent Kelly,0,gray
-50,0,0,NA,1,blue,Collin C. Peterson,1,purple
-51,0,0,house,1,blue,David Scott,0,gray
-52,0,0,house,1,blue,Jim Costa,0,gray
-53,0,0,house,1,blue,Timothy J. Walz,0,gray
-54,1,1,house,1,blue,Marcia L. Fudge,0,gray
-55,0,0,house,1,blue,James P. McGovern,0,gray
-56,1,1,house,1,blue,Suzan K. DelBene,0,gray
-57,0,0,house,1,blue,Filemon Vela,0,gray
-58,1,1,house,1,blue,Michelle Lujan Grisham,0,gray
-59,1,1,house,1,blue,Ann M. Kuster,0,gray
-60,0,0,house,1,blue,Richard M. Nolan,0,gray
-61,1,1,house,1,blue,Cheri Bustos,0,gray
-62,0,0,house,1,blue,Sean Patrick Maloney,0,gray
-63,0,0,house,1,blue,Pete Aguilar,0,gray
-64,1,1,house,1,blue,Stacey E. Plaskett,0,gray
-65,1,1,house,1,blue,Alma S. Adams,0,gray
-66,0,0,NA,0,red,Harold Rogers,1,purple
-67,0,0,house,0,red,Rodney P. Frelinghuysen,0,gray
-68,0,0,house,0,red,Robert B. Aderholt,0,gray
-69,1,1,house,0,red,Kay Granger,0,gray
-70,0,0,house,0,red,Michael K. Simpson,0,gray
-71,0,0,house,0,red,John Abney Culberson,0,gray
-72,0,0,house,0,red,John R. Carter,0,gray
-73,0,0,house,0,red,Ken Calvert,0,gray
-74,0,0,house,0,red,Tom Cole,0,gray
-75,0,0,house,0,red,Mario Diaz-Balart,0,gray
-76,0,0,house,0,red,Charles W. Dent,0,gray
-77,0,0,house,0,red,Tom Graves,0,gray
-78,0,0,house,0,red,Kevin Yoder,0,gray
-79,0,0,house,0,red,Steve Womack,0,gray
-80,0,0,house,0,red,Jeff Fortenberry,0,gray
-81,0,0,house,0,red,"Charles J. ""Chuck"" Fleischmann",0,gray
-82,1,1,house,0,red,Jaime Herrera Beutler,0,gray
-83,0,0,house,0,red,David P. Joyce,0,gray
-84,0,0,house,0,red,David G. Valadao,0,gray
-85,0,0,house,0,red,Andy Harris,0,gray
-86,0,0,house,0,red,Mark E. Amodei,0,gray
-87,0,0,house,0,red,David Young,0,gray
-88,0,0,house,0,red,Evan H. Jenkins,0,gray
-89,0,0,house,0,red,Steven M. Palazzo,0,gray
-90,1,1,house,1,blue,Nita M. Lowey,1,purple
-91,1,1,house,1,blue,Marcy Kaptur,0,gray
-92,0,0,house,1,blue,Peter J. Visclosky,0,gray
-93,0,0,house,1,blue,José E. Serrano,0,gray
-94,1,1,house,1,blue,Rosa L. DeLauro,0,gray
-95,0,0,house,1,blue,David E. Price,0,gray
-96,1,1,house,1,blue,Lucille Roybal-Allard,0,gray
-97,0,0,house,1,blue,Sanford D. Bishop Jr.,0,gray
-98,1,1,house,1,blue,Barbara Lee,0,gray
-99,1,1,house,1,blue,Betty McCollum,0,gray
-100,0,0,house,1,blue,Tim Ryan,0,gray
-101,0,0,house,1,blue,C. A. Dutch Ruppersberger,0,gray
-102,1,1,house,1,blue,Debbie Wasserman Schultz,0,gray
-103,0,0,house,1,blue,Henry Cuellar,0,gray
-104,1,1,house,1,blue,Chellie Pingree,0,gray
-105,0,0,house,1,blue,Derek Kilmer,0,gray
-106,0,0,NA,1,blue,Matt Cartwright,0,gray
-107,0,0,NA,0,red,Mac Thornberry,1,purple
-108,0,0,house,0,red,Walter B. Jones,0,gray
-109,0,0,house,0,red,Joe Wilson,0,gray
-110,0,0,house,0,red,Rob Bishop,0,gray
-111,0,0,house,0,red,Trent Franks,0,gray
-112,0,0,house,0,red,Bill Shuster,0,gray
-113,0,0,house,0,red,Doug Lamborn,0,gray
-114,0,0,house,0,red,Robert J. Wittman,0,gray
-115,0,0,house,0,red,Duncan Hunter,0,gray
-116,0,0,house,0,red,Mike Coffman,0,gray
-117,0,0,house,0,red,Mo Brooks,0,gray
-118,0,0,house,0,red,Paul Cook,0,gray
-119,0,0,house,0,red,Jim Bridenstine,0,gray
-120,0,0,house,0,red,Bradley Byrne,0,gray
-121,0,0,house,0,red,Sam Graves,0,gray
-122,0,0,house,0,red,Ryan K. Zinke,0,gray
-123,1,1,house,0,red,Elise M. Stefanik,0,gray
-124,1,1,house,0,red,Martha McSally,0,gray
-125,0,0,house,0,red,Stephen Knight,0,gray
-126,0,0,house,0,red,Thomas MacArthur,0,gray
-127,0,0,house,0,red,Steve Russell,0,gray
-128,0,0,house,1,blue,Robert A. Brady,0,gray
-129,1,1,house,1,blue,Susan A. Davis,0,gray
-130,0,0,house,1,blue,James R. Langevin,0,gray
-131,0,0,house,1,blue,Rick Larsen,0,gray
-132,0,0,house,1,blue,Jim Cooper,0,gray
-133,1,1,house,1,blue,Madeleine Z. Bordallo,0,gray
-134,0,0,house,1,blue,Joe Courtney,0,gray
-135,1,1,house,1,blue,Niki Tsongas,0,gray
-136,0,0,house,1,blue,John Garamendi,0,gray
-137,0,0,house,1,blue,"Henry C. ""Hank"" Johnson Jr.",0,gray
-138,0,0,house,1,blue,Scott H. Peters,0,gray
-139,0,0,house,1,blue,Marc A. Veasey,0,gray
-140,1,1,house,1,blue,Tulsi Gabbard,0,gray
-141,0,0,house,1,blue,Beto O'Rourke,0,gray
-142,0,0,house,1,blue,Donald Norcross,0,gray
-143,0,0,house,1,blue,Ruben Gallego,0,gray
-144,0,0,house,1,blue,Seth Moulton,0,gray
-145,0,0,house,0,red,Jeb Hensarling,1,purple
-146,0,0,house,0,red,Edward R. Royce,0,gray
-147,0,0,house,0,red,Patrick T. McHenry,NA,NA
-148,0,0,house,0,red,Stevan Pearce,0,gray
-149,0,0,house,0,red,Bill Posey,0,gray
-150,0,0,house,0,red,Blaine Luetkemeyer,0,gray
-151,0,0,house,0,red,Bill Huizenga,0,gray
-152,0,0,house,0,red,Sean P. Duffy,0,gray
-153,0,0,house,0,red,Steve Stivers,0,gray
-154,0,0,house,0,red,Mick Mulvaney,0,gray
-155,0,0,house,0,red,Randy Hultgren,0,gray
-156,0,0,house,0,red,Dennis A. Ross,0,gray
-157,0,0,house,0,red,Robert Pittenger,0,gray
-158,1,1,house,0,red,Ann Wagner,0,gray
-159,0,0,house,0,red,Andy Barr,0,gray
-160,0,0,house,0,red,Keith J. Rothfus,0,gray
-161,0,0,house,0,red,Luke Messer,0,gray
-162,0,0,house,0,red,David Schweikert,0,gray
-163,0,0,house,0,red,Scott R. Tipton,0,gray
-164,0,0,house,0,red,Roger Williams,0,gray
-165,0,0,house,0,red,Bruce Poliquin,0,gray
-166,1,1,house,0,red,Mia B. Love,0,gray
-167,0,0,house,0,red,J. French Hill,0,gray
-168,0,0,house,0,red,Tom Emmer,0,gray
-169,1,1,house,1,blue,Maxine Waters,1,purple
-170,1,1,house,1,blue,Carolyn B. Maloney,0,gray
-171,1,1,house,1,blue,Nydia M. Velázquez,0,gray
-172,0,0,house,1,blue,Brad Sherman,0,gray
-173,0,0,house,1,blue,Gregory W. Meeks,0,gray
-174,0,0,house,1,blue,Michael E. Capuano,0,gray
-175,0,0,house,1,blue,Wm. Lacy Clay,0,gray
-176,0,0,house,1,blue,Stephen F. Lynch,0,gray
-177,0,0,house,1,blue,Al Green,0,gray
-178,0,0,house,1,blue,Emanuel Cleaver,0,gray
-179,1,1,house,1,blue,Gwen Moore,0,gray
-180,0,0,house,1,blue,Keith Ellison,0,gray
-181,0,0,house,1,blue,Ed Perlmutter,0,gray
-182,0,0,house,1,blue,Bill Foster,0,gray
-183,0,0,house,1,blue,Daniel T. Kildee,0,gray
-184,0,0,house,1,blue,John K. Delaney,0,gray
-185,1,1,house,1,blue,Kyrsten Sinema,0,gray
-186,1,1,house,1,blue,Joyce Beatty,0,gray
-187,0,0,house,1,blue,Denny Heck,0,gray
-188,0,0,house,1,blue,Juan Vargas,0,gray
-189,0,0,house,0,red,Tom Price,1,purple
-190,0,0,house,0,red,Tom McClintock,0,gray
-191,1,1,house,0,red,Diane Black,0,gray
-192,0,0,house,0,red,Todd Rokita,NA,NA
-193,0,0,house,0,red,Rob Woodall,0,gray
-194,0,0,house,0,red,Mark Sanford,0,gray
-195,0,0,house,0,red,Dave Brat,0,gray
-196,0,0,house,0,red,Rod Blum,0,gray
-197,0,0,house,0,red,Alexander X. Mooney,0,gray
-198,0,0,house,0,red,Glenn Grothman,0,gray
-199,0,0,house,0,red,Gary J. Palmer,0,gray
-200,0,0,house,0,red,Bruce Westerman,0,gray
-201,0,0,house,0,red,James B. Renacci,0,gray
-202,0,0,house,0,red,Bill Johnson,0,gray
-203,0,0,house,1,blue,Chris Van Hollen,1,purple
-204,0,0,house,1,blue,John A. Yarmuth,0,gray
-205,0,0,house,1,blue,Bill Pascrell Jr.,0,gray
-206,1,1,house,1,blue,Kathy Castor,0,gray
-207,0,0,house,1,blue,Mark Pocan,0,gray
-208,1,1,house,1,blue,Debbie Dingell,0,gray
-209,0,0,house,1,blue,Ted Lieu,0,gray
-210,1,1,house,0,red,Virginia Foxx,0,gray
-211,0,0,house,0,red,David P. Roe,0,gray
-212,0,0,house,0,red,Tim Walberg,0,gray
-213,0,0,house,0,red,Brett Guthrie,0,gray
-214,0,0,house,0,red,Lou Barletta,0,gray
-215,0,0,house,0,red,"Earl L. ""Buddy"" Carter",0,gray
-216,0,0,house,0,red,Mike Bishop,0,gray
-217,0,0,house,0,red,Carlos Curbelo,0,gray
-218,0,0,house,1,blue,"Robert C. ""Bobby"" Scott",1,purple
-219,0,0,house,1,blue,Raúl M. Grijalva,0,gray
-220,0,0,house,1,blue,Jared Polis,0,gray
-221,0,0,house,1,blue,Gregorio Kilili Camacho Sablan,0,gray
-222,1,1,house,1,blue,Frederica S. Wilson,0,gray
-223,1,1,house,1,blue,Suzanne Bonamici,0,gray
-224,0,0,house,1,blue,Mark Takano,0,gray
-225,0,0,house,1,blue,Hakeem S. Jeffries,0,gray
-226,1,1,house,1,blue,Katherine M. Clark,0,gray
-227,0,0,house,1,blue,Mark DeSaulnier,0,gray
-228,0,0,house,0,red,Christopher H. Smith,0,gray
-229,1,1,house,0,red,Dana Rohrabacher,0,gray
-230,0,0,house,0,red,Steve Chabot,0,gray
-231,0,0,house,0,red,Michael T. McCaul,0,gray
-232,0,0,house,0,red,Ted Poe,0,gray
-233,0,0,house,0,red,Darrell E. Issa,0,gray
-234,0,0,house,0,red,Tom Marino,0,gray
-235,0,0,house,0,red,Jeff Duncan,0,gray
-236,0,0,house,0,red,Randy K. Weber Sr.,0,gray
-237,0,0,house,0,red,Scott Perry,0,gray
-238,0,0,house,0,red,Ron DeSantis,0,gray
-239,0,0,house,0,red,Mark Meadows,0,gray
-240,0,0,house,0,red,David A. Trott,0,gray
-241,0,0,house,0,red,Lee M. Zeldin,0,gray
-242,0,0,house,0,red,Daniel M. Donovan Jr.,0,gray
-243,0,0,house,1,blue,Eliot L. Engel,1,purple
-244,0,0,house,1,blue,Albio Sires,0,gray
-245,0,0,house,1,blue,Gerald E. Connolly,0,gray
-246,0,0,house,1,blue,Theodore E. Deutch,0,gray
-247,0,0,house,1,blue,Brian Higgins,0,gray
-248,1,1,house,1,blue,Karen Bass,0,gray
-249,0,0,house,1,blue,William R. Keating,0,gray
-250,0,0,house,1,blue,David N. Cicilline,0,gray
-251,0,0,house,1,blue,Ami Bera,0,gray
-252,0,0,house,1,blue,Alan S. Lowenthal,0,gray
-253,1,1,house,1,blue,Grace Meng,0,gray
-254,1,1,house,1,blue,Lois Frankel,0,gray
-255,1,1,house,1,blue,Robin L. Kelly,0,gray
-256,0,0,house,1,blue,Brendan F. Boyle,0,gray
-257,0,0,house,0,red,Jason Chaffetz,1,purple
-258,0,0,house,0,red,John J. Duncan Jr.,0,gray
-259,0,0,house,0,red,Justin Amash,0,gray
-260,0,0,house,0,red,Paul A. Gosar,0,gray
-261,0,0,house,0,red,Blake Farenthold,0,gray
-262,0,0,house,0,red,Thomas Massie,0,gray
-263,0,0,house,0,red,Ken Buck,0,gray
-264,0,0,house,0,red,Mark Walker,0,gray
-265,0,0,house,0,red,Jody B. Hice,0,gray
-266,0,0,house,0,red,Will Hurd,0,gray
-267,1,1,house,1,blue,Eleanor Holmes Norton,0,gray
-268,1,1,house,1,blue,Brenda L. Lawrence,0,gray
-269,1,1,house,1,blue,Bonnie Watson Coleman,0,gray
-270,0,0,house,1,blue,Peter Welch,0,gray
-271,0,0,house,0,red,Gregg Harper,0,gray
-272,1,1,house,0,red,Barbara Comstock,0,gray
-273,1,1,house,1,blue,Zoe Lofgren,0,gray
-274,0,0,house,0,red,Lamar Smith,0,gray
-275,0,0,house,0,red,John Katko,0,gray
-276,0,0,house,0,red,Barry Loudermilk,0,gray
-277,0,0,house,0,red,John Ratcliffe,0,gray
-278,0,0,house,1,blue,Bennie G. Thompson,1,purple
-279,1,1,house,1,blue,Sheila Jackson Lee,0,gray
-280,0,0,house,1,blue,Cedric L. Richmond,0,gray
-281,0,0,house,1,blue,Donald M. Payne Jr.,0,gray
-282,1,1,house,1,blue,Kathleen M. Rice,0,gray
-283,1,1,house,1,blue,Norma J. Torres,0,gray
-284,0,0,house,0,red,Fred Upton,1,purple
-285,0,0,house,0,red,Joe Barton,0,gray
-286,0,0,house,0,red,John Shimkus,0,gray
-287,0,0,house,0,red,Greg Walden,0,gray
-288,0,0,house,0,red,Tim Murphy,0,gray
-289,0,0,house,0,red,Michael C. Burgess,0,gray
-290,1,1,house,0,red,Marsha Blackburn,NA,NA
-291,0,0,house,0,red,Steve Scalise,0,gray
-292,0,0,house,0,red,Robert E. Latta,0,gray
-293,1,1,house,0,red,Cathy McMorris Rodgers,0,gray
-294,0,0,house,0,red,Leonard Lance,0,gray
-295,0,0,house,0,red,Pete Olson,0,gray
-296,0,0,house,0,red,David B. McKinley,0,gray
-297,0,0,house,0,red,Adam Kinzinger,0,gray
-298,0,0,house,0,red,H. Morgan Griffith,0,gray
-299,0,0,house,0,red,Gus M. Bilirakis,0,gray
-300,0,0,house,0,red,Billy Long,0,gray
-301,0,0,house,0,red,Larry Bucshon,0,gray
-302,0,0,house,0,red,Bill Flores,0,gray
-303,0,0,house,0,red,Markwayne Mullin,0,gray
-304,0,0,house,0,red,Richard Hudson,0,gray
-305,0,0,house,0,red,Chris Collins,0,gray
-306,0,0,house,0,red,Kevin Cramer,0,gray
-307,0,0,house,1,blue,Frank Pallone Jr.,1,purple
-308,0,0,house,1,blue,Bobby L. Rush,0,gray
-309,1,1,house,1,blue,Anna G. Eshoo,0,gray
-310,0,0,house,1,blue,Gene Green,0,gray
-311,1,1,house,1,blue,Diana DeGette,0,gray
-312,0,0,house,1,blue,Michael F. Doyle,0,gray
-313,1,1,house,1,blue,Janice D. Schakowsky,0,gray
-314,0,0,house,1,blue,G. K. Butterfield,0,gray
-315,1,1,house,1,blue,Doris O. Matsui,0,gray
-316,0,0,house,1,blue,John P. Sarbanes,0,gray
-317,0,0,house,1,blue,Jerry McNerney,0,gray
-318,0,0,house,1,blue,Ben Ray Luján,0,gray
-319,0,0,house,1,blue,Paul Tonko,0,gray
-320,1,1,house,1,blue,Yvette D. Clarke,0,gray
-321,0,0,house,1,blue,David Loebsack,0,gray
-322,0,0,house,1,blue,Kurt Schrader,0,gray
-323,0,0,house,1,blue,Joseph P. Kennedy III,0,gray
-324,0,0,house,1,blue,Tony Cárdenas,0,gray
-325,0,0,house,0,red,Don Young,0,gray
-326,0,0,house,0,red,Louie Gohmert,0,gray
-327,0,0,house,0,red,Raúl R. Labrador,0,gray
-328,0,0,house,0,red,Garret Graves,0,gray
-329,1,1,house,0,red,Aumua Amata Coleman Radewagen,0,gray
-330,0,0,house,0,red,Darin LaHood,0,gray
-331,1,1,house,1,blue,Grace F. Napolitano,0,gray
-332,0,0,house,1,blue,Jared Huffman,0,gray
-333,0,0,house,1,blue,Raul Ruiz,0,gray
-334,0,0,house,1,blue,Donald S. Beyer Jr.,0,gray
-335,0,0,house,0,red,F. James Sensenbrenner Jr.,0,gray
-336,0,0,house,0,red,Doug Collins,0,gray
-337,1,1,house,0,red,Mimi Walters,0,gray
-338,0,0,NA,1,blue,John Conyers Jr.,1,purple
-339,0,0,house,1,blue,Jerrold Nadler,0,gray
-340,0,0,house,1,blue,Steve Cohen,0,gray
-341,1,1,house,1,blue,Judy Chu,0,gray
-342,0,0,house,1,blue,Luis V. Gutiérrez,0,gray
-343,0,0,house,0,red,Daniel Webster,0,gray
-344,0,0,house,0,red,Brian Babin,0,gray
-345,0,0,house,0,red,Ryan A. Costello,0,gray
-346,0,0,house,1,blue,Peter A. DeFazio,1,purple
-347,1,1,house,1,blue,Eddie Bernice Johnson,0,gray
-348,0,0,house,1,blue,Daniel Lipinski,0,gray
-349,1,1,house,1,blue,Dina Titus,0,gray
-350,1,1,house,1,blue,Elizabeth H. Esty,0,gray
-351,1,1,house,1,blue,Julia Brownley,0,gray
-352,0,0,house,0,red,Pete Sessions,1,purple
-353,1,1,house,1,blue,Louise McIntosh Slaughter,1,purple
-354,0,0,house,1,blue,Alcee L. Hastings,0,gray
-355,0,0,house,0,red,Warren Davidson,0,gray
-356,0,0,house,0,red,Patrick Meehan,0,gray
-357,0,0,house,0,red,Kenny Marchant,0,gray
-358,0,0,house,1,blue,John B. Larson,0,gray
-359,0,0,joint,0,red,Kevin Brady,1,purple
-360,0,0,house,0,red,Sam Johnson,0,gray
-361,0,0,house,0,red,Patrick J. Tiberi,0,gray
-362,0,0,house,0,red,David G. Reichert,0,gray
-363,0,0,house,0,red,Vern Buchanan,0,gray
-364,0,0,house,0,red,Adrian Smith,0,gray
-365,1,1,house,0,red,Lynn Jenkins,0,gray
-366,0,0,house,0,red,Erik Paulsen,0,gray
-367,0,0,house,0,red,Tom Reed,0,gray
-368,0,0,house,0,red,Todd C. Young,0,gray
-369,0,0,house,0,red,Mike Kelly,0,gray
-370,1,1,house,0,red,Kristi L. Noem,0,gray
-371,0,0,house,0,red,George Holding,0,gray
-372,0,0,house,0,red,Jason Smith,0,gray
-373,0,0,house,0,red,Tom Rice,0,gray
-374,0,0,NA,1,blue,Sander M. Levin,1,purple
-375,0,0,house,1,blue,John Lewis,0,gray
-376,0,0,house,1,blue,Richard E. Neal,0,gray
-377,0,0,house,1,blue,Xavier Becerra,0,gray
-378,0,0,house,1,blue,Lloyd Doggett,0,gray
-379,0,0,house,1,blue,Mike Thompson,0,gray
-380,0,0,house,1,blue,Earl Blumenauer,0,gray
-381,0,0,house,1,blue,Ron Kind,0,gray
-382,0,0,house,1,blue,Joseph Crowley,0,gray
-383,0,0,house,1,blue,Danny K. Davis,0,gray
-384,0,0,joint,0,red,Roger F. Wicker,NA,NA
-385,0,0,joint,0,red,Richard Burr,0,gray
-386,0,0,joint,0,red,John Boozman,0,gray
-387,0,0,joint,1,blue,Benjamin L. Cardin,0,gray
-388,0,0,joint,1,blue,Sheldon Whitehouse,0,gray
-389,0,0,joint,1,blue,Tom Udall,0,gray
-390,1,1,joint,1,blue,Jeanne Shaheen,0,gray
-391,0,0,joint,0,red,Robert Aderholt,0,gray
-392,0,0,joint,0,red,Mike Lee,0,gray
-393,0,0,joint,0,red,Tom Cotton,0,gray
-394,0,0,joint,0,red,Ben Sasse,0,gray
-395,0,0,joint,0,red,Ted Cruz,0,gray
-396,0,0,joint,0,red,Bill Cassidy,0,gray
-397,1,1,joint,1,blue,Amy Klobuchar,0,gray
-398,0,0,joint,1,blue,"Robert P. Casey, Jr.",0,gray
-399,0,0,joint,1,blue,Martin Heinrich,0,gray
-400,0,0,joint,1,blue,Gary C. Peters,0,gray
-401,0,0,joint,0,red,Roy Blunt,NA,NA
-402,0,0,joint,0,red,Pat Roberts,0,gray
-403,1,1,joint,0,red,Shelley Moore Capito,0,gray
-404,0,0,joint,1,blue,Charles E. Schumer,0,gray
-405,0,0,joint,1,blue,Patrick J. Leahy,0,gray
-406,0,0,joint,0,red,Orrin G. Hatch,NA,NA
-407,0,0,joint,0,red,Chuck Grassley,0,gray
-408,0,0,joint,0,red,Mike Crapo,0,gray
-409,0,0,joint,1,blue,Ron Wyden,0,gray
-410,1,1,joint,1,blue,Debbie Stabenow,0,gray
-411,0,0,joint,0,red,Paul Ryan,NA,NA
-412,0,0,joint,1,blue,Sander Levin,0,gray
-413,0,0,senate,0,red,John Cornyn,0,gray
-414,0,0,senate,0,red,James E. Risch,0,gray
-415,0,0,senate,0,red,Jeff Sessions,0,gray
-416,1,1,senate,1,blue,Dianne Feinstein,0,gray
-417,0,0,senate,0,red,Johnny Isakson,NA,NA
-418,0,0,senate,1,blue,Christopher A. Coons,0,gray
-419,0,0,senate,1,blue,Brian Schatz,0,gray
-420,0,0,senate,0,red,John Barrasso,NA,NA
-421,0,0,senate,0,red,John McCain,0,gray
-422,1,1,senate,0,red,Lisa Murkowski,0,gray
-423,0,0,senate,0,red,John Hoeven,0,gray
-424,0,0,senate,0,red,James Lankford,0,gray
-425,0,0,senate,0,red,Steve Daines,0,gray
-426,0,0,senate,0,red,Jerry Moran,0,gray
-427,0,0,senate,1,blue,Jon Tester,NA,NA
-428,1,1,senate,1,blue,Maria Cantwell,0,gray
-429,0,0,senate,1,blue,Al Franken,0,gray
-430,1,1,senate,1,blue,Heidi Heitkamp,0,gray
-431,0,0,senate,0,red,Marco Rubio,0,gray
-432,1,1,senate,0,red,Susan M. Collins,0,gray
-433,0,0,senate,0,red,Mitch McConnell,NA,NA
-434,0,0,senate,1,blue,Mark R. Warner,0,gray
-435,0,0,senate,1,blue,"Angus S. King, Jr.",0,gray
-436,1,1,senate,1,blue,Mazie K. Hirono,0,gray
-437,0,0,senate,1,blue,Jack Reed,NA,NA
-438,0,0,senate,0,red,Jeff Flake,0,gray
-439,0,0,senate,0,red,Tim Scott,0,gray
-440,0,0,senate,0,red,Bob Corker,0,gray
-441,0,0,senate,0,red,Dean Heller,0,gray
-442,0,0,senate,0,red,David Perdue,0,gray
-443,0,0,senate,0,red,Thom Tillis,0,gray
-444,1,1,senate,1,blue,Claire McCaskill,1,purple
-445,0,0,senate,1,blue,Bill Nelson,0,gray
-446,1,1,senate,1,blue,Kirsten E. Gillibrand,0,gray
-447,0,0,senate,1,blue,Richard Blumenthal,0,gray
-448,0,0,senate,1,blue,Joe Donnelly,0,gray
-449,1,1,senate,1,blue,Elizabeth Warren,0,gray
-450,0,0,senate,1,blue,Tim Kaine,0,gray
-451,0,0,senate,0,red,Thad Cochran,0,gray
-452,1,1,senate,0,red,Joni Ernst,0,gray
-453,0,0,senate,0,red,John Thune,0,gray
-454,0,0,senate,1,blue,Sherrod Brown,0,gray
-455,0,0,senate,1,blue,Michael F. Bennet,0,gray
-456,0,0,senate,0,red,Richard C. Shelby,0,gray
-457,0,0,senate,0,red,Lamar Alexander,0,gray
-458,0,0,senate,0,red,Lindsey Graham,0,gray
-459,1,1,senate,1,blue,Patty Murray,0,gray
-460,0,0,senate,1,blue,Richard J. Durbin,0,gray
-461,0,0,senate,1,blue,Jeff Merkley,0,gray
-462,1,1,senate,1,blue,Tammy Baldwin,0,gray
-463,0,0,senate,1,blue,Christopher Murphy,0,gray
-464,0,0,senate,0,red,James M. Inhofe,0,gray
-465,1,1,senate,0,red,Deb Fischer,0,gray
-466,0,0,senate,0,red,Mike Rounds,0,gray
-467,0,0,senate,0,red,Daniel Sullivan,0,gray
-468,0,0,senate,1,blue,"Joe Manchin, III",0,gray
-469,0,0,senate,0,red,Patrick J. Toomey,0,gray
-470,0,0,senate,1,blue,Robert Menendez,0,gray
-471,0,0,senate,0,red,Michael B. Enzi,NA,NA
-472,0,0,senate,0,red,Rob Portman,0,gray
-473,0,0,senate,0,red,Ron Johnson,0,gray
-474,0,0,senate,1,blue,Bernard Sanders,1,purple
-475,0,0,senate,0,red,Cory Gardner,0,gray
-476,0,0,senate,1,blue,Edward J. Markey,0,gray
-477,0,0,senate,1,blue,Cory A. Booker,0,gray
-478,0,0,senate,1,blue,Thomas R. Carper,0,gray
-479,0,0,senate,0,red,Rand Paul,0,gray
+1,0,blue,House,0,red,Devin Nunes,1,purple
+2,0,blue,House,0,red,K. Michael Conaway,0,gray
+3,0,blue,House,0,red,Peter T. King,0,gray
+4,0,blue,House,0,red,Frank A. LoBiondo,0,gray
+5,0,blue,House,0,red,Thomas J. Rooney,0,gray
+6,0,blue,House,0,red,Mike Pompeo,0,gray
+7,1,pink2,House,0,red,Ileana Ros-Lehtinen,0,gray
+8,0,blue,House,0,red,Michael R. Turner,0,gray
+9,0,blue,House,0,red,Brad R. Wenstrup,0,gray
+10,0,blue,House,0,red,Chris Stewart,0,gray
+11,0,blue,House,1,blue,Adam B. Schiff,1,purple
+12,0,blue,House,1,blue,James A. Himes,0,gray
+13,1,pink2,House,1,blue,Terri A. Sewell,0,gray
+14,0,blue,House,1,blue,André Carson,0,gray
+15,1,pink2,House,1,blue,Jackie Speier,0,gray
+16,0,blue,House,1,blue,Mike Quigley,0,gray
+17,0,blue,House,1,blue,Eric Swalwell,0,gray
+18,0,blue,House,1,blue,Joaquin Castro,0,gray
+19,0,blue,House,0,red,Trey Gowdy,1,purple
+20,0,blue,House,0,red,Jim Jordan,0,gray
+21,0,blue,House,0,red,Peter J. Roskam,0,gray
+22,1,pink2,House,0,red,Martha Roby,0,gray
+23,1,pink2,House,0,red,Susan W. Brooks,0,gray
+24,0,blue,House,1,blue,Elijah E. Cummings,1,purple
+25,0,blue,House,1,blue,Adam Smith,0,gray
+26,1,pink2,House,1,blue,Linda T. Sánchez,0,gray
+27,1,pink2,House,1,blue,Tammy Duckworth,0,gray
+28,0,blue,House,0,red,Bob Goodlatte,0,gray
+29,0,blue,House,0,red,Frank D. Lucas,0,gray
+30,0,blue,House,0,red,Steve King,0,gray
+31,0,blue,House,0,red,Mike Rogers,0,gray
+32,0,blue,House,0,red,Glenn Thompson,0,gray
+33,0,blue,House,0,red,Bob Gibbs,0,gray
+34,0,blue,House,0,red,Austin Scott,0,gray
+35,0,blue,House,0,red,"Eric A. ""Rick"" Crawford",0,gray
+36,0,blue,House,0,red,Scott DesJarlais,0,gray
+37,1,pink2,House,0,red,Vicky Hartzler,0,gray
+38,0,blue,House,0,red,Jeff Denham,0,gray
+39,0,blue,House,0,red,Doug LaMalfa,0,gray
+40,0,blue,House,0,red,Rodney Davis,0,gray
+41,0,blue,House,0,red,Ted S. Yoho,0,gray
+42,1,pink2,House,0,red,Jackie Walorski,0,gray
+43,0,blue,House,0,red,Rick W. Allen,0,gray
+44,0,blue,House,0,red,Mike Bost,0,gray
+45,0,blue,House,0,red,David Rouzer,0,gray
+46,0,blue,House,0,red,Ralph Lee Abraham,0,gray
+47,0,blue,House,0,red,John R. Moolenaar,0,gray
+48,0,blue,House,0,red,Dan Newhouse,0,gray
+49,0,blue,House,0,red,Trent Kelly,0,gray
+50,0,blue,NA,1,blue,Collin C. Peterson,1,purple
+51,0,blue,House,1,blue,David Scott,0,gray
+52,0,blue,House,1,blue,Jim Costa,0,gray
+53,0,blue,House,1,blue,Timothy J. Walz,0,gray
+54,1,pink2,House,1,blue,Marcia L. Fudge,0,gray
+55,0,blue,House,1,blue,James P. McGovern,0,gray
+56,1,pink2,House,1,blue,Suzan K. DelBene,0,gray
+57,0,blue,House,1,blue,Filemon Vela,0,gray
+58,1,pink2,House,1,blue,Michelle Lujan Grisham,0,gray
+59,1,pink2,House,1,blue,Ann M. Kuster,0,gray
+60,0,blue,House,1,blue,Richard M. Nolan,0,gray
+61,1,pink2,House,1,blue,Cheri Bustos,0,gray
+62,0,blue,House,1,blue,Sean Patrick Maloney,0,gray
+63,0,blue,House,1,blue,Pete Aguilar,0,gray
+64,1,pink2,House,1,blue,Stacey E. Plaskett,0,gray
+65,1,pink2,House,1,blue,Alma S. Adams,0,gray
+66,0,blue,NA,0,red,Harold Rogers,1,purple
+67,0,blue,House,0,red,Rodney P. Frelinghuysen,0,gray
+68,0,blue,House,0,red,Robert B. Aderholt,0,gray
+69,1,pink2,House,0,red,Kay Granger,0,gray
+70,0,blue,House,0,red,Michael K. Simpson,0,gray
+71,0,blue,House,0,red,John Abney Culberson,0,gray
+72,0,blue,House,0,red,John R. Carter,0,gray
+73,0,blue,House,0,red,Ken Calvert,0,gray
+74,0,blue,House,0,red,Tom Cole,0,gray
+75,0,blue,House,0,red,Mario Diaz-Balart,0,gray
+76,0,blue,House,0,red,Charles W. Dent,0,gray
+77,0,blue,House,0,red,Tom Graves,0,gray
+78,0,blue,House,0,red,Kevin Yoder,0,gray
+79,0,blue,House,0,red,Steve Womack,0,gray
+80,0,blue,House,0,red,Jeff Fortenberry,0,gray
+81,0,blue,House,0,red,"Charles J. ""Chuck"" Fleischmann",0,gray
+82,1,pink2,House,0,red,Jaime Herrera Beutler,0,gray
+83,0,blue,House,0,red,David P. Joyce,0,gray
+84,0,blue,House,0,red,David G. Valadao,0,gray
+85,0,blue,House,0,red,Andy Harris,0,gray
+86,0,blue,House,0,red,Mark E. Amodei,0,gray
+87,0,blue,House,0,red,David Young,0,gray
+88,0,blue,House,0,red,Evan H. Jenkins,0,gray
+89,0,blue,House,0,red,Steven M. Palazzo,0,gray
+90,1,pink2,House,1,blue,Nita M. Lowey,1,purple
+91,1,pink2,House,1,blue,Marcy Kaptur,0,gray
+92,0,blue,House,1,blue,Peter J. Visclosky,0,gray
+93,0,blue,House,1,blue,José E. Serrano,0,gray
+94,1,pink2,House,1,blue,Rosa L. DeLauro,0,gray
+95,0,blue,House,1,blue,David E. Price,0,gray
+96,1,pink2,House,1,blue,Lucille Roybal-Allard,0,gray
+97,0,blue,House,1,blue,Sanford D. Bishop Jr.,0,gray
+98,1,pink2,House,1,blue,Barbara Lee,0,gray
+99,1,pink2,House,1,blue,Betty McCollum,0,gray
+100,0,blue,House,1,blue,Tim Ryan,0,gray
+101,0,blue,House,1,blue,C. A. Dutch Ruppersberger,0,gray
+102,1,pink2,House,1,blue,Debbie Wasserman Schultz,0,gray
+103,0,blue,House,1,blue,Henry Cuellar,0,gray
+104,1,pink2,House,1,blue,Chellie Pingree,0,gray
+105,0,blue,House,1,blue,Derek Kilmer,0,gray
+106,0,blue,NA,1,blue,Matt Cartwright,0,gray
+107,0,blue,NA,0,red,Mac Thornberry,1,purple
+108,0,blue,House,0,red,Walter B. Jones,0,gray
+109,0,blue,House,0,red,Joe Wilson,0,gray
+110,0,blue,House,0,red,Rob Bishop,0,gray
+111,0,blue,House,0,red,Trent Franks,0,gray
+112,0,blue,House,0,red,Bill Shuster,0,gray
+113,0,blue,House,0,red,Doug Lamborn,0,gray
+114,0,blue,House,0,red,Robert J. Wittman,0,gray
+115,0,blue,House,0,red,Duncan Hunter,0,gray
+116,0,blue,House,0,red,Mike Coffman,0,gray
+117,0,blue,House,0,red,Mo Brooks,0,gray
+118,0,blue,House,0,red,Paul Cook,0,gray
+119,0,blue,House,0,red,Jim Bridenstine,0,gray
+120,0,blue,House,0,red,Bradley Byrne,0,gray
+121,0,blue,House,0,red,Sam Graves,0,gray
+122,0,blue,House,0,red,Ryan K. Zinke,0,gray
+123,1,pink2,House,0,red,Elise M. Stefanik,0,gray
+124,1,pink2,House,0,red,Martha McSally,0,gray
+125,0,blue,House,0,red,Stephen Knight,0,gray
+126,0,blue,House,0,red,Thomas MacArthur,0,gray
+127,0,blue,House,0,red,Steve Russell,0,gray
+128,0,blue,House,1,blue,Robert A. Brady,0,gray
+129,1,pink2,House,1,blue,Susan A. Davis,0,gray
+130,0,blue,House,1,blue,James R. Langevin,0,gray
+131,0,blue,House,1,blue,Rick Larsen,0,gray
+132,0,blue,House,1,blue,Jim Cooper,0,gray
+133,1,pink2,House,1,blue,Madeleine Z. Bordallo,0,gray
+134,0,blue,House,1,blue,Joe Courtney,0,gray
+135,1,pink2,House,1,blue,Niki Tsongas,0,gray
+136,0,blue,House,1,blue,John Garamendi,0,gray
+137,0,blue,House,1,blue,"Henry C. ""Hank"" Johnson Jr.",0,gray
+138,0,blue,House,1,blue,Scott H. Peters,0,gray
+139,0,blue,House,1,blue,Marc A. Veasey,0,gray
+140,1,pink2,House,1,blue,Tulsi Gabbard,0,gray
+141,0,blue,House,1,blue,Beto O'Rourke,0,gray
+142,0,blue,House,1,blue,Donald Norcross,0,gray
+143,0,blue,House,1,blue,Ruben Gallego,0,gray
+144,0,blue,House,1,blue,Seth Moulton,0,gray
+145,0,blue,House,0,red,Jeb Hensarling,1,purple
+146,0,blue,House,0,red,Edward R. Royce,0,gray
+147,0,blue,House,0,red,Patrick T. McHenry,NA,NA
+148,0,blue,House,0,red,Stevan Pearce,0,gray
+149,0,blue,House,0,red,Bill Posey,0,gray
+150,0,blue,House,0,red,Blaine Luetkemeyer,0,gray
+151,0,blue,House,0,red,Bill Huizenga,0,gray
+152,0,blue,House,0,red,Sean P. Duffy,0,gray
+153,0,blue,House,0,red,Steve Stivers,0,gray
+154,0,blue,House,0,red,Mick Mulvaney,0,gray
+155,0,blue,House,0,red,Randy Hultgren,0,gray
+156,0,blue,House,0,red,Dennis A. Ross,0,gray
+157,0,blue,House,0,red,Robert Pittenger,0,gray
+158,1,pink2,House,0,red,Ann Wagner,0,gray
+159,0,blue,House,0,red,Andy Barr,0,gray
+160,0,blue,House,0,red,Keith J. Rothfus,0,gray
+161,0,blue,House,0,red,Luke Messer,0,gray
+162,0,blue,House,0,red,David Schweikert,0,gray
+163,0,blue,House,0,red,Scott R. Tipton,0,gray
+164,0,blue,House,0,red,Roger Williams,0,gray
+165,0,blue,House,0,red,Bruce Poliquin,0,gray
+166,1,pink2,House,0,red,Mia B. Love,0,gray
+167,0,blue,House,0,red,J. French Hill,0,gray
+168,0,blue,House,0,red,Tom Emmer,0,gray
+169,1,pink2,House,1,blue,Maxine Waters,1,purple
+170,1,pink2,House,1,blue,Carolyn B. Maloney,0,gray
+171,1,pink2,House,1,blue,Nydia M. Velázquez,0,gray
+172,0,blue,House,1,blue,Brad Sherman,0,gray
+173,0,blue,House,1,blue,Gregory W. Meeks,0,gray
+174,0,blue,House,1,blue,Michael E. Capuano,0,gray
+175,0,blue,House,1,blue,Wm. Lacy Clay,0,gray
+176,0,blue,House,1,blue,Stephen F. Lynch,0,gray
+177,0,blue,House,1,blue,Al Green,0,gray
+178,0,blue,House,1,blue,Emanuel Cleaver,0,gray
+179,1,pink2,House,1,blue,Gwen Moore,0,gray
+180,0,blue,House,1,blue,Keith Ellison,0,gray
+181,0,blue,House,1,blue,Ed Perlmutter,0,gray
+182,0,blue,House,1,blue,Bill Foster,0,gray
+183,0,blue,House,1,blue,Daniel T. Kildee,0,gray
+184,0,blue,House,1,blue,John K. Delaney,0,gray
+185,1,pink2,House,1,blue,Kyrsten Sinema,0,gray
+186,1,pink2,House,1,blue,Joyce Beatty,0,gray
+187,0,blue,House,1,blue,Denny Heck,0,gray
+188,0,blue,House,1,blue,Juan Vargas,0,gray
+189,0,blue,House,0,red,Tom Price,1,purple
+190,0,blue,House,0,red,Tom McClintock,0,gray
+191,1,pink2,House,0,red,Diane Black,0,gray
+192,0,blue,House,0,red,Todd Rokita,NA,NA
+193,0,blue,House,0,red,Rob Woodall,0,gray
+194,0,blue,House,0,red,Mark Sanford,0,gray
+195,0,blue,House,0,red,Dave Brat,0,gray
+196,0,blue,House,0,red,Rod Blum,0,gray
+197,0,blue,House,0,red,Alexander X. Mooney,0,gray
+198,0,blue,House,0,red,Glenn Grothman,0,gray
+199,0,blue,House,0,red,Gary J. Palmer,0,gray
+200,0,blue,House,0,red,Bruce Westerman,0,gray
+201,0,blue,House,0,red,James B. Renacci,0,gray
+202,0,blue,House,0,red,Bill Johnson,0,gray
+203,0,blue,House,1,blue,Chris Van Hollen,1,purple
+204,0,blue,House,1,blue,John A. Yarmuth,0,gray
+205,0,blue,House,1,blue,Bill Pascrell Jr.,0,gray
+206,1,pink2,House,1,blue,Kathy Castor,0,gray
+207,0,blue,House,1,blue,Mark Pocan,0,gray
+208,1,pink2,House,1,blue,Debbie Dingell,0,gray
+209,0,blue,House,1,blue,Ted Lieu,0,gray
+210,1,pink2,House,0,red,Virginia Foxx,0,gray
+211,0,blue,House,0,red,David P. Roe,0,gray
+212,0,blue,House,0,red,Tim Walberg,0,gray
+213,0,blue,House,0,red,Brett Guthrie,0,gray
+214,0,blue,House,0,red,Lou Barletta,0,gray
+215,0,blue,House,0,red,"Earl L. ""Buddy"" Carter",0,gray
+216,0,blue,House,0,red,Mike Bishop,0,gray
+217,0,blue,House,0,red,Carlos Curbelo,0,gray
+218,0,blue,House,1,blue,"Robert C. ""Bobby"" Scott",1,purple
+219,0,blue,House,1,blue,Raúl M. Grijalva,0,gray
+220,0,blue,House,1,blue,Jared Polis,0,gray
+221,0,blue,House,1,blue,Gregorio Kilili Camacho Sablan,0,gray
+222,1,pink2,House,1,blue,Frederica S. Wilson,0,gray
+223,1,pink2,House,1,blue,Suzanne Bonamici,0,gray
+224,0,blue,House,1,blue,Mark Takano,0,gray
+225,0,blue,House,1,blue,Hakeem S. Jeffries,0,gray
+226,1,pink2,House,1,blue,Katherine M. Clark,0,gray
+227,0,blue,House,1,blue,Mark DeSaulnier,0,gray
+228,0,blue,House,0,red,Christopher H. Smith,0,gray
+229,1,pink2,House,0,red,Dana Rohrabacher,0,gray
+230,0,blue,House,0,red,Steve Chabot,0,gray
+231,0,blue,House,0,red,Michael T. McCaul,0,gray
+232,0,blue,House,0,red,Ted Poe,0,gray
+233,0,blue,House,0,red,Darrell E. Issa,0,gray
+234,0,blue,House,0,red,Tom Marino,0,gray
+235,0,blue,House,0,red,Jeff Duncan,0,gray
+236,0,blue,House,0,red,Randy K. Weber Sr.,0,gray
+237,0,blue,House,0,red,Scott Perry,0,gray
+238,0,blue,House,0,red,Ron DeSantis,0,gray
+239,0,blue,House,0,red,Mark Meadows,0,gray
+240,0,blue,House,0,red,David A. Trott,0,gray
+241,0,blue,House,0,red,Lee M. Zeldin,0,gray
+242,0,blue,House,0,red,Daniel M. Donovan Jr.,0,gray
+243,0,blue,House,1,blue,Eliot L. Engel,1,purple
+244,0,blue,House,1,blue,Albio Sires,0,gray
+245,0,blue,House,1,blue,Gerald E. Connolly,0,gray
+246,0,blue,House,1,blue,Theodore E. Deutch,0,gray
+247,0,blue,House,1,blue,Brian Higgins,0,gray
+248,1,pink2,House,1,blue,Karen Bass,0,gray
+249,0,blue,House,1,blue,William R. Keating,0,gray
+250,0,blue,House,1,blue,David N. Cicilline,0,gray
+251,0,blue,House,1,blue,Ami Bera,0,gray
+252,0,blue,House,1,blue,Alan S. Lowenthal,0,gray
+253,1,pink2,House,1,blue,Grace Meng,0,gray
+254,1,pink2,House,1,blue,Lois Frankel,0,gray
+255,1,pink2,House,1,blue,Robin L. Kelly,0,gray
+256,0,blue,House,1,blue,Brendan F. Boyle,0,gray
+257,0,blue,House,0,red,Jason Chaffetz,1,purple
+258,0,blue,House,0,red,John J. Duncan Jr.,0,gray
+259,0,blue,House,0,red,Justin Amash,0,gray
+260,0,blue,House,0,red,Paul A. Gosar,0,gray
+261,0,blue,House,0,red,Blake Farenthold,0,gray
+262,0,blue,House,0,red,Thomas Massie,0,gray
+263,0,blue,House,0,red,Ken Buck,0,gray
+264,0,blue,House,0,red,Mark Walker,0,gray
+265,0,blue,House,0,red,Jody B. Hice,0,gray
+266,0,blue,House,0,red,Will Hurd,0,gray
+267,1,pink2,House,1,blue,Eleanor Holmes Norton,0,gray
+268,1,pink2,House,1,blue,Brenda L. Lawrence,0,gray
+269,1,pink2,House,1,blue,Bonnie Watson Coleman,0,gray
+270,0,blue,House,1,blue,Peter Welch,0,gray
+271,0,blue,House,0,red,Gregg Harper,0,gray
+272,1,pink2,House,0,red,Barbara Comstock,0,gray
+273,1,pink2,House,1,blue,Zoe Lofgren,0,gray
+274,0,blue,House,0,red,Lamar Smith,0,gray
+275,0,blue,House,0,red,John Katko,0,gray
+276,0,blue,House,0,red,Barry Loudermilk,0,gray
+277,0,blue,House,0,red,John Ratcliffe,0,gray
+278,0,blue,House,1,blue,Bennie G. Thompson,1,purple
+279,1,pink2,House,1,blue,Sheila Jackson Lee,0,gray
+280,0,blue,House,1,blue,Cedric L. Richmond,0,gray
+281,0,blue,House,1,blue,Donald M. Payne Jr.,0,gray
+282,1,pink2,House,1,blue,Kathleen M. Rice,0,gray
+283,1,pink2,House,1,blue,Norma J. Torres,0,gray
+284,0,blue,House,0,red,Fred Upton,1,purple
+285,0,blue,House,0,red,Joe Barton,0,gray
+286,0,blue,House,0,red,John Shimkus,0,gray
+287,0,blue,House,0,red,Greg Walden,0,gray
+288,0,blue,House,0,red,Tim Murphy,0,gray
+289,0,blue,House,0,red,Michael C. Burgess,0,gray
+290,1,pink2,House,0,red,Marsha Blackburn,NA,NA
+291,0,blue,House,0,red,Steve Scalise,0,gray
+292,0,blue,House,0,red,Robert E. Latta,0,gray
+293,1,pink2,House,0,red,Cathy McMorris Rodgers,0,gray
+294,0,blue,House,0,red,Leonard Lance,0,gray
+295,0,blue,House,0,red,Pete Olson,0,gray
+296,0,blue,House,0,red,David B. McKinley,0,gray
+297,0,blue,House,0,red,Adam Kinzinger,0,gray
+298,0,blue,House,0,red,H. Morgan Griffith,0,gray
+299,0,blue,House,0,red,Gus M. Bilirakis,0,gray
+300,0,blue,House,0,red,Billy Long,0,gray
+301,0,blue,House,0,red,Larry Bucshon,0,gray
+302,0,blue,House,0,red,Bill Flores,0,gray
+303,0,blue,House,0,red,Markwayne Mullin,0,gray
+304,0,blue,House,0,red,Richard Hudson,0,gray
+305,0,blue,House,0,red,Chris Collins,0,gray
+306,0,blue,House,0,red,Kevin Cramer,0,gray
+307,0,blue,House,1,blue,Frank Pallone Jr.,1,purple
+308,0,blue,House,1,blue,Bobby L. Rush,0,gray
+309,1,pink2,House,1,blue,Anna G. Eshoo,0,gray
+310,0,blue,House,1,blue,Gene Green,0,gray
+311,1,pink2,House,1,blue,Diana DeGette,0,gray
+312,0,blue,House,1,blue,Michael F. Doyle,0,gray
+313,1,pink2,House,1,blue,Janice D. Schakowsky,0,gray
+314,0,blue,House,1,blue,G. K. Butterfield,0,gray
+315,1,pink2,House,1,blue,Doris O. Matsui,0,gray
+316,0,blue,House,1,blue,John P. Sarbanes,0,gray
+317,0,blue,House,1,blue,Jerry McNerney,0,gray
+318,0,blue,House,1,blue,Ben Ray Luján,0,gray
+319,0,blue,House,1,blue,Paul Tonko,0,gray
+320,1,pink2,House,1,blue,Yvette D. Clarke,0,gray
+321,0,blue,House,1,blue,David Loebsack,0,gray
+322,0,blue,House,1,blue,Kurt Schrader,0,gray
+323,0,blue,House,1,blue,Joseph P. Kennedy III,0,gray
+324,0,blue,House,1,blue,Tony Cárdenas,0,gray
+325,0,blue,House,0,red,Don Young,0,gray
+326,0,blue,House,0,red,Louie Gohmert,0,gray
+327,0,blue,House,0,red,Raúl R. Labrador,0,gray
+328,0,blue,House,0,red,Garret Graves,0,gray
+329,1,pink2,House,0,red,Aumua Amata Coleman Radewagen,0,gray
+330,0,blue,House,0,red,Darin LaHood,0,gray
+331,1,pink2,House,1,blue,Grace F. Napolitano,0,gray
+332,0,blue,House,1,blue,Jared Huffman,0,gray
+333,0,blue,House,1,blue,Raul Ruiz,0,gray
+334,0,blue,House,1,blue,Donald S. Beyer Jr.,0,gray
+335,0,blue,House,0,red,F. James Sensenbrenner Jr.,0,gray
+336,0,blue,House,0,red,Doug Collins,0,gray
+337,1,pink2,House,0,red,Mimi Walters,0,gray
+338,0,blue,NA,1,blue,John Conyers Jr.,1,purple
+339,0,blue,House,1,blue,Jerrold Nadler,0,gray
+340,0,blue,House,1,blue,Steve Cohen,0,gray
+341,1,pink2,House,1,blue,Judy Chu,0,gray
+342,0,blue,House,1,blue,Luis V. Gutiérrez,0,gray
+343,0,blue,House,0,red,Daniel Webster,0,gray
+344,0,blue,House,0,red,Brian Babin,0,gray
+345,0,blue,House,0,red,Ryan A. Costello,0,gray
+346,0,blue,House,1,blue,Peter A. DeFazio,1,purple
+347,1,pink2,House,1,blue,Eddie Bernice Johnson,0,gray
+348,0,blue,House,1,blue,Daniel Lipinski,0,gray
+349,1,pink2,House,1,blue,Dina Titus,0,gray
+350,1,pink2,House,1,blue,Elizabeth H. Esty,0,gray
+351,1,pink2,House,1,blue,Julia Brownley,0,gray
+352,0,blue,House,0,red,Pete Sessions,1,purple
+353,1,pink2,House,1,blue,Louise McIntosh Slaughter,1,purple
+354,0,blue,House,1,blue,Alcee L. Hastings,0,gray
+355,0,blue,House,0,red,Warren Davidson,0,gray
+356,0,blue,House,0,red,Patrick Meehan,0,gray
+357,0,blue,House,0,red,Kenny Marchant,0,gray
+358,0,blue,House,1,blue,John B. Larson,0,gray
+359,0,blue,NA,0,red,Kevin Brady,1,purple
+360,0,blue,House,0,red,Sam Johnson,0,gray
+361,0,blue,House,0,red,Patrick J. Tiberi,0,gray
+362,0,blue,House,0,red,David G. Reichert,0,gray
+363,0,blue,House,0,red,Vern Buchanan,0,gray
+364,0,blue,House,0,red,Adrian Smith,0,gray
+365,1,pink2,House,0,red,Lynn Jenkins,0,gray
+366,0,blue,House,0,red,Erik Paulsen,0,gray
+367,0,blue,House,0,red,Tom Reed,0,gray
+368,0,blue,House,0,red,Todd C. Young,0,gray
+369,0,blue,House,0,red,Mike Kelly,0,gray
+370,1,pink2,House,0,red,Kristi L. Noem,0,gray
+371,0,blue,House,0,red,George Holding,0,gray
+372,0,blue,House,0,red,Jason Smith,0,gray
+373,0,blue,House,0,red,Tom Rice,0,gray
+374,0,blue,NA,1,blue,Sander M. Levin,1,purple
+375,0,blue,House,1,blue,John Lewis,0,gray
+376,0,blue,House,1,blue,Richard E. Neal,0,gray
+377,0,blue,House,1,blue,Xavier Becerra,0,gray
+378,0,blue,House,1,blue,Lloyd Doggett,0,gray
+379,0,blue,House,1,blue,Mike Thompson,0,gray
+380,0,blue,House,1,blue,Earl Blumenauer,0,gray
+381,0,blue,House,1,blue,Ron Kind,0,gray
+382,0,blue,House,1,blue,Joseph Crowley,0,gray
+383,0,blue,House,1,blue,Danny K. Davis,0,gray
+384,0,blue,NA,0,red,Roger F. Wicker,NA,NA
+385,0,blue,NA,0,red,Richard Burr,0,gray
+386,0,blue,NA,0,red,John Boozman,0,gray
+387,0,blue,NA,1,blue,Benjamin L. Cardin,0,gray
+388,0,blue,NA,1,blue,Sheldon Whitehouse,0,gray
+389,0,blue,NA,1,blue,Tom Udall,0,gray
+390,1,pink2,NA,1,blue,Jeanne Shaheen,0,gray
+391,0,blue,NA,0,red,Robert Aderholt,0,gray
+392,0,blue,NA,0,red,Mike Lee,0,gray
+393,0,blue,NA,0,red,Tom Cotton,0,gray
+394,0,blue,NA,0,red,Ben Sasse,0,gray
+395,0,blue,NA,0,red,Ted Cruz,0,gray
+396,0,blue,NA,0,red,Bill Cassidy,0,gray
+397,1,pink2,NA,1,blue,Amy Klobuchar,0,gray
+398,0,blue,NA,1,blue,"Robert P. Casey, Jr.",0,gray
+399,0,blue,NA,1,blue,Martin Heinrich,0,gray
+400,0,blue,NA,1,blue,Gary C. Peters,0,gray
+401,0,blue,NA,0,red,Roy Blunt,NA,NA
+402,0,blue,NA,0,red,Pat Roberts,0,gray
+403,1,pink2,NA,0,red,Shelley Moore Capito,0,gray
+404,0,blue,NA,1,blue,Charles E. Schumer,0,gray
+405,0,blue,NA,1,blue,Patrick J. Leahy,0,gray
+406,0,blue,NA,0,red,Orrin G. Hatch,NA,NA
+407,0,blue,NA,0,red,Chuck Grassley,0,gray
+408,0,blue,NA,0,red,Mike Crapo,0,gray
+409,0,blue,NA,1,blue,Ron Wyden,0,gray
+410,1,pink2,NA,1,blue,Debbie Stabenow,0,gray
+411,0,blue,NA,0,red,Paul Ryan,NA,NA
+412,0,blue,NA,1,blue,Sander Levin,0,gray
+413,0,blue,Senate,0,red,John Cornyn,0,gray
+414,0,blue,Senate,0,red,James E. Risch,0,gray
+415,0,blue,Senate,0,red,Jeff Sessions,0,gray
+416,1,pink2,Senate,1,blue,Dianne Feinstein,0,gray
+417,0,blue,Senate,0,red,Johnny Isakson,NA,NA
+418,0,blue,Senate,1,blue,Christopher A. Coons,0,gray
+419,0,blue,Senate,1,blue,Brian Schatz,0,gray
+420,0,blue,Senate,0,red,John Barrasso,NA,NA
+421,0,blue,Senate,0,red,John McCain,0,gray
+422,1,pink2,Senate,0,red,Lisa Murkowski,0,gray
+423,0,blue,Senate,0,red,John Hoeven,0,gray
+424,0,blue,Senate,0,red,James Lankford,0,gray
+425,0,blue,Senate,0,red,Steve Daines,0,gray
+426,0,blue,Senate,0,red,Jerry Moran,0,gray
+427,0,blue,Senate,1,blue,Jon Tester,NA,NA
+428,1,pink2,Senate,1,blue,Maria Cantwell,0,gray
+429,0,blue,Senate,1,blue,Al Franken,0,gray
+430,1,pink2,Senate,1,blue,Heidi Heitkamp,0,gray
+431,0,blue,Senate,0,red,Marco Rubio,0,gray
+432,1,pink2,Senate,0,red,Susan M. Collins,0,gray
+433,0,blue,Senate,0,red,Mitch McConnell,NA,NA
+434,0,blue,Senate,1,blue,Mark R. Warner,0,gray
+435,0,blue,Senate,1,blue,"Angus S. King, Jr.",0,gray
+436,1,pink2,Senate,1,blue,Mazie K. Hirono,0,gray
+437,0,blue,Senate,1,blue,Jack Reed,NA,NA
+438,0,blue,Senate,0,red,Jeff Flake,0,gray
+439,0,blue,Senate,0,red,Tim Scott,0,gray
+440,0,blue,Senate,0,red,Bob Corker,0,gray
+441,0,blue,Senate,0,red,Dean Heller,0,gray
+442,0,blue,Senate,0,red,David Perdue,0,gray
+443,0,blue,Senate,0,red,Thom Tillis,0,gray
+444,1,pink2,Senate,1,blue,Claire McCaskill,1,purple
+445,0,blue,Senate,1,blue,Bill Nelson,0,gray
+446,1,pink2,Senate,1,blue,Kirsten E. Gillibrand,0,gray
+447,0,blue,Senate,1,blue,Richard Blumenthal,0,gray
+448,0,blue,Senate,1,blue,Joe Donnelly,0,gray
+449,1,pink2,Senate,1,blue,Elizabeth Warren,0,gray
+450,0,blue,Senate,1,blue,Tim Kaine,0,gray
+451,0,blue,Senate,0,red,Thad Cochran,0,gray
+452,1,pink2,Senate,0,red,Joni Ernst,0,gray
+453,0,blue,Senate,0,red,John Thune,0,gray
+454,0,blue,Senate,1,blue,Sherrod Brown,0,gray
+455,0,blue,Senate,1,blue,Michael F. Bennet,0,gray
+456,0,blue,Senate,0,red,Richard C. Shelby,0,gray
+457,0,blue,Senate,0,red,Lamar Alexander,0,gray
+458,0,blue,Senate,0,red,Lindsey Graham,0,gray
+459,1,pink2,Senate,1,blue,Patty Murray,0,gray
+460,0,blue,Senate,1,blue,Richard J. Durbin,0,gray
+461,0,blue,Senate,1,blue,Jeff Merkley,0,gray
+462,1,pink2,Senate,1,blue,Tammy Baldwin,0,gray
+463,0,blue,Senate,1,blue,Christopher Murphy,0,gray
+464,0,blue,Senate,0,red,James M. Inhofe,0,gray
+465,1,pink2,Senate,0,red,Deb Fischer,0,gray
+466,0,blue,Senate,0,red,Mike Rounds,0,gray
+467,0,blue,Senate,0,red,Daniel Sullivan,0,gray
+468,0,blue,Senate,1,blue,"Joe Manchin, III",0,gray
+469,0,blue,Senate,0,red,Patrick J. Toomey,0,gray
+470,0,blue,Senate,1,blue,Robert Menendez,0,gray
+471,0,blue,Senate,0,red,Michael B. Enzi,NA,NA
+472,0,blue,Senate,0,red,Rob Portman,0,gray
+473,0,blue,Senate,0,red,Ron Johnson,0,gray
+474,0,blue,Senate,1,blue,Bernard Sanders,1,purple
+475,0,blue,Senate,0,red,Cory Gardner,0,gray
+476,0,blue,Senate,1,blue,Edward J. Markey,0,gray
+477,0,blue,Senate,1,blue,Cory A. Booker,0,gray
+478,0,blue,Senate,1,blue,Thomas R. Carper,0,gray
+479,0,blue,Senate,0,red,Rand Paul,0,gray

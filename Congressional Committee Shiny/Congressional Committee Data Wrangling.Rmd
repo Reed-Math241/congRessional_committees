@@ -83,6 +83,7 @@ one16 <- one16 %>%
   rename(name = officialFullName)
 
 congressperson_affiliation <- congressperson %>%
+  arrange(label) %>%
   rowid_to_column("id")
   
 congressperson_gender <- left_join(congressperson_affiliation, one16, by = c("label" = "name"))
@@ -97,9 +98,9 @@ congressperson_affiliation <- inner_join(congressperson_affiliation, gender, by 
 
 gender_color <- gender %>%
   mutate(gender = case_when(gender == 0 ~ "blue",
-                            gender == 1 ~ "pink"))
+                            gender == 1 ~ "pink2"))
 
-congressperson_affiliation <- inner_join(congressperson_affiliation, gender, by = "id")
+congressperson_affiliation <- inner_join(congressperson_affiliation, gender_color, by = "id")
 
 congressperson_affiliation <- congressperson_affiliation %>%
   select(-label.x, - label.y, -label)
@@ -157,7 +158,9 @@ congressperson_affiliation <- congressperson_affiliation %>%
          title_color = title.y,
          gender_bin = gender.x,
          gender_color = gender.y,
-         name = name.x)
+         name = name.x) %>%
+  mutate(type = case_when(type == "house" ~ "House",
+                          type == "senate" ~ "Senate"))
 
 # ROBIN USE THIS CODE TO CONVERT THE ROW IN THE DATAFRAME TO A VECTOR TO USE IN THE GRAPHY GRAPH
 leadership_colors <- congressperson_affiliation[['title_color']]
@@ -204,28 +207,24 @@ bipartite_matrix <- as.matrix(net)
 
 #t(bipartite_matrix)
 
-event_matrix_prod <- bipartite_matrix %*% t(bipartite_matrix)
+matrix_prod <- bipartite_matrix %*% t(bipartite_matrix)
 
-diag(event_matrix_prod) <- 0
+diag(matrix_prod) <- 0
 
-event_matrix_prod
+matrix_prod
+
+net2 <- as.network(matrix_prod, directed = FALSE)
 
 # Will have to experiment with vertex.col to get this hecking thing to graph colors by my affiliation data
 
 # edge.lwd changes the thickness of the edges by the number of them
-gplot(event_matrix_prod, vertex.col = leadership_colors, thresh = 1, jitter = TRUE, usearrows = FALSE, vertex.cex = 2)
+gplot(matrix_prod, vertex.col = leadership_colors, thresh = 1, jitter = TRUE, usearrows = FALSE, vertex.cex = 2)
 
 ?gplot
 ```
 
 ## Further options: use one of the methods detailed at the bottom of the instructions (Yule's Q, Pearson Correlation, **Jaccard Similarity**), then use tnet or statnet to calculate the measures. I have, however, hit a wall for the night and will finish this part up tomorrow :)
 - This can be done for my measures, and I can join the affiliation data to do the statistical calculations
-
-
-```{r}
-
-```
-
 
 ## Centrality measures in `statnet`
 
@@ -248,12 +247,12 @@ congressperson_jaccard <- as.matrix(congressperson_jaccard)
 diag(congressperson_jaccard) <- 0
 
 # women_jaccard          # Look at the matrix before you binarize
-congressperson_jaccard <- ifelse(congressperson_jaccard>0.95, 1, 0)     # Binarize
+congressperson_jaccard <- ifelse(congressperson_jaccard > 0.95, 1, 0)     # Binarize
 
 # jaccard_women      # Take a look at the matrix if you like.
 
 jacc_congressperson <- as.network(congressperson_jaccard,    # Create a statnet network
-                                  directed=FALSE)
+                                  directed = FALSE)
 gplot(jacc_congressperson,
       usearrows = FALSE, 
       jitter = TRUE,
@@ -280,10 +279,17 @@ congress_cent_df
 congressperson_affiliation2 <- inner_join(congressperson_affiliation, congress_cent_df, by = c("name" = "IDs"))
 
 ```
+
+
 ```{r}
 # Hypothesis test:
 t.test(congress_deg ~ party_bin, data = congressperson_affiliation2)
 t.test(congress_eig ~ party_bin, data = congressperson_affiliation2)
+
+# Would you look at that gender_bin only has two categories!!! :(
+congressperson_affiliation2 %>%
+  group_by(gender_bin) %>%
+  summarize(n())
 
 # Save into dataframe
 library(broom)
