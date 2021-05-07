@@ -43,6 +43,11 @@ ui <- fluidPage(
 # Server function
 server <- function(input, output){
   # Filter the dataset to only have folks from the chambers of interest
+  # First filter the affiliation data, then do a left join (the one that makes the other lost what
+  # it doesn't have in common)
+  congressperson_affiliation_reactive <- reactive({
+    
+  })
   
   # Then, make the one-mode network!
   

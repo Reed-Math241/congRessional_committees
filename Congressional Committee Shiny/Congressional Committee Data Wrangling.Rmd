@@ -221,40 +221,9 @@ gplot(event_matrix_prod, vertex.col = leadership_colors, thresh = 1, jitter = TR
 ## Further options: use one of the methods detailed at the bottom of the instructions (Yule's Q, Pearson Correlation, **Jaccard Similarity**), then use tnet or statnet to calculate the measures. I have, however, hit a wall for the night and will finish this part up tomorrow :)
 - This can be done for my measures, and I can join the affiliation data to do the statistical calculations
 
-## Add the affiliation data/demographic characteristics
-- Have one master data set that has just the congresspeople (name) and dem info joined (gender, leadership, political party, rank, # of terms?)
-- To change this in the app, filter down the dataset (gender == 1), then the matrix + data produced will only graph those folks
-- Look how to color the `statnet` graphs. Can do this by mode, so there's probably an argument for that somewhere ???
-  - vertex.col does this. Says I should create a vector with the colors I want?? But I can't find example code ANYWHERE WHYYYYY
-  - Would it make more sense to make my network an igraph from the `statnet` it's currently in? Then I could make groups???? Ugh that's complicated too
-  - Think best solution is to make a vector from joining relevant info by name :(
 
 ```{r}
-# Maybe this????
-# Media outlets are blue squares, audience nodes are orange circles:
-V(net2)$color <- c("steel blue", "orange")[V(net2)$type+1]
-V(net2)$shape <- c("square", "circle")[V(net2)$type+1]
-# Media outlets will have name labels, audience members will not:
-V(net2)$label <- ""
-V(net2)$label[V(net2)$type==F] <- nodes2$media[V(net2)$type==F]
-V(net2)$label.cex=.6
-V(net2)$label.font=2
-plot(net2, vertex.label.color="white", vertex.size=(2-V(net2)$type)*8)
 
-library(ggraph)
-ggraph(net, layout="lgl") +
-geom_edge_fan(color="gray50", width=0.8, alpha=0.5) +
-geom_node_point(color=V(net)$color, size=8) +
-theme_void()
-```
-
-## Can try `visNetwork`
-- Try this first PLEASE it looks so simple !!!!
-```{r}
-library('visNetwork')
-visNetwork(nodes, links)
-
-vis.nodes$color.background <- c("slategrey", "tomato", "gold")[nodes$media.type]
 ```
 
 
@@ -268,43 +237,60 @@ library(ade4) # If you have not already done so
 # I have a bipartite_matrix and net!
 bipartite_matrix <- as.matrix(net)  # Extract the matrix
 
-women_jaccard <- dist.binary(t(bipartite_matrix), 
-                             method=1, upper=TRUE, 
-                             diag = FALSE) # Method #1 is "Jaccard Index"
-event_jaccard <- dist.binary(bipartite_matrix, 
-                             method=1, upper=TRUE, 
-                             diag = FALSE) 
+congressperson_jaccard <- dist.binary(t(bipartite_matrix), 
+                                      method=1, upper=TRUE, 
+                                      diag = FALSE) # Method #1 is "Jaccard Index"
+#event_jaccard <- dist.binary(bipartite_matrix, 
+ #                            method=1, upper=TRUE, 
+  #                           diag = FALSE) 
 
-women_jaccard <- as.matrix(women_jaccard)   
-diag(women_jaccard)<-0
+congressperson_jaccard <- as.matrix(congressperson_jaccard)   
+diag(congressperson_jaccard) <- 0
 
 # women_jaccard          # Look at the matrix before you binarize
-jaccard_women <- ifelse(women_jaccard>0.95, 1, 0)     # Binarize
+congressperson_jaccard <- ifelse(congressperson_jaccard>0.95, 1, 0)     # Binarize
 
 # jaccard_women      # Take a look at the matrix if you like.
 
-jacc_women <- as.network(jaccard_women,    # Create a statnet network
-                         directed=FALSE)
-gplot(jacc_women,
+jacc_congressperson <- as.network(congressperson_jaccard,    # Create a statnet network
+                                  directed=FALSE)
+gplot(jacc_congressperson,
       usearrows = FALSE, 
-      displaylabels = TRUE)
-
-IDs <- jacc_women%v%"vertex.names"
-women_deg  <- degree(jacc_women)
-women_bet  <- betweenness(jacc_women)
-women_clos <- closeness(jacc_women,
-                        cmode="suminvdir")
-women_eig  <- evcent(jacc_women)
-
-women_cent_df <- data.frame(IDs, 
-                            women_deg, 
-                            women_bet, 
-                            women_clos, 
-                            women_eig)
-
-women_cent_df
+      jitter = TRUE,
+      vertex.cex = 2)
 ```
 
+```{r}
+# Unsure why, but betweenness() and closeness() take a VERY long time to run/don't run.
+IDs <- jacc_congressperson%v%"vertex.names"
+congress_deg  <- degree(jacc_congressperson)
+#congress_bet  <- betweenness(jacc_congressperson)
+#congress_clos <- closeness(jacc_congressperson,
+           #             cmode="suminvdir")
+congress_eig  <- evcent(jacc_congressperson)
+
+congress_cent_df <- data.frame(IDs, 
+                            congress_deg, 
+                            #congress_bet, 
+                            #congress_clos, 
+                            congress_eig)
+
+congress_cent_df
+
+congressperson_affiliation2 <- inner_join(congressperson_affiliation, congress_cent_df, by = c("name" = "IDs"))
+
+```
+```{r}
+# Hypothesis test:
+t.test(congress_deg ~ party_bin, data = congressperson_affiliation2)
+t.test(congress_eig ~ party_bin, data = congressperson_affiliation2)
+
+# Save into dataframe
+library(broom)
+gender_deg <- tidy(t.test(congress_deg ~ gender_bin, data = congressperson_affiliation2))
+
+# Definitely will also have to graph the results (boxplot of the centralization measures) so we know which one is higher :)
+```
 
 
 
