@@ -70,6 +70,14 @@ nodes <- left_join(committee_nodes, committee_names, by = "thomas_id") %>%
   select(-thomas_id) %>%
   rename(committee = id)
 
+node_list <- nodes %>%
+  distinct(name, .keep_all = TRUE) %>%
+  rowid_to_column("id") %>%
+  select(-committee)
+
+write_csv(node_list, file = "node_list.csv")
+
+
 #names(nodes) <- NULL
 #nodes
 ```
@@ -223,6 +231,9 @@ gplot(matrix_prod, vertex.col = leadership_colors, thresh = 1, jitter = TRUE, us
 ?gplot
 ```
 
+
+
+
 ## Further options: use one of the methods detailed at the bottom of the instructions (Yule's Q, Pearson Correlation, **Jaccard Similarity**), then use tnet or statnet to calculate the measures. I have, however, hit a wall for the night and will finish this part up tomorrow :)
 - This can be done for my measures, and I can join the affiliation data to do the statistical calculations
 
@@ -299,5 +310,24 @@ gender_deg <- tidy(t.test(congress_deg ~ gender_bin, data = congressperson_affil
 ```
 
 
+```{r}
+# This is the one that works thus far:
+# m <- congressperson_jaccard
+m <- matrix_prod
+idx = m > 0.001
+edges = data.frame(
+    source = row(m)[idx],
+    target = col(m)[idx],
+    corr = m[idx])
 
+library(networkD3)
+node_list
+nodes_d3 <- mutate(congressperson_affiliation, id = id - 1)
+edges_d3 <- mutate(edges, source = source - 1, target = target - 1)
+
+forceNetwork(Links = edges_d3, Nodes = nodes_d3, Source = "source", Target = "target", 
+             NodeID = "name", Group = "gender_color", Value = "corr", 
+             opacity = 1, fontSize = 16, zoom = TRUE)
+?forceNetwork
+```
 
