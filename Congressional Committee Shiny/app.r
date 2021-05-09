@@ -64,41 +64,39 @@ ui <- fluidPage(
                   tabPanel("Static Network",
                            plotOutput(outputId = "network"),
                            tags$em("The above static network graphs are colored by the variable of interest selected
-                                  on the right. For gender, the network is colored blue for men and pink for women.
+                                  on the left For gender, the network is colored blue for men and pink for women.
                                   For leadership, those who have a title (Committee Chair or Ranking Member) are colored
-                                  purple, while those without a tile are colored gray. And lastly, Democrats are colored
+                                  purple, while those without a title are colored gray. And lastly, Democrats are colored
                                   blue while Republicans are colored red."),
                            tags$br(),
                            tags$br(),
-                           tags$p("Navigate through the below table to look at the affiliation information of all
-                                  Congressfolk selected on the right and menu. Feel free to sort by any category of
-                                  interest."),
+                           tags$p("Navigate through the table to look at the affiliation information of all
+                                  Congressfolk selected on the left. Feel free to sort by any category of interest."),
                            tags$br(),
                            dataTableOutput(outputId = "network_info"),
                            tags$br(),
                            tags$em("Note that the data used in this project was collected by govtrack by pulling
                                    information from Congressfolks' website. This opens the possibility for NA values, wherein
-                                   the folks at govtrack were not sure of a Congressperson's gender, political party,
+                                   the data collectors at govtrack were not sure of a Congressperson's gender, political party,
                                    leadership title (or lack thereof), or even what chamber they are part of. The
                                    author chooses to leave in such NA values, as it is not fair to drop an entire
                                    observation of data because one piece of data is missing. This could cause assumption
                                    issues in the statistical significance tab.")),
                   tabPanel("Explanation of Network Centrality",
                            h4("What is Degree and Eigenvector Centrality?"),
-                           tags$p("Network analysis is accompanied by multiple different measures of determining power or
+                           tags$p("Network analysis is accompanied by multiple different measures to determine power or
                                   prestige for the nodes (each individual Congressperson, in this case). This app looks at
                                   network centrality, or a calculation of how CENTRAL in the network each individual node
                                   is. The first centrality measure, degree centality, measures the number of ties to other
-                                  Congressfolk each individual member of the network has. This is helpful in determining who
+                                  Congressfolk each individual person has. This is helpful in determining who
                                   has the most connections—connections which provide the congressperson with
-                                  larger amounts of social capital than their fellow congressfolk, helping them build coalition
+                                  larger amounts of social capital than their fellow congressfolk, helping them build coalitions
                                   to pass favorable legislation for their constituency. Degree centrality is useful in
                                   terms of how simple it is to calculate, but unfortunately has constraints in that it reflects
                                   ties in LOCAL networks instead of taking into account how meaningful ties with specific
-                                  central congressfolk are."),
+                                  more central central congressfolk are."),
                            tags$br(),
-                           tags$p("Below are two networks, each with
-                                  their nodes labeled with their degree centrality score."),
+                           tags$p("Below are two networks, each node labeled with their degree centrality score."),
                            div(img(src = "deg_ex1.png", height = 350, width = 350), style="text-align: center;"),
                            tags$br(),
                            div(img(src = "deg_ex2.png", height = 350, width = 350), style="text-align: center;"),
@@ -107,11 +105,12 @@ ui <- fluidPage(
                            tags$p("My second centrality measure looks at eigenvector centrality. This measure is much more complicated
                                   than degree centrality, but can account for the strength of ties on a global level. Essentially, 
                                   folks created the 'radius of power' as a measurement for centrality. Eigenvector centrality borrows the
-                                  logic of positive radius of power, where a higher centrality measure comes from being tied to other people
+                                  logic of positive radius of power (the value of 0.23 shown in the graph), where a higher centrality 
+                                  measure comes from being tied to other people
                                   who are more central in the network. Through eigenvectors, we can assess the important of relative differences
                                   between ties at a level of higher detail than degree centrality can provide."),
                            tags$br(),
-                           tags$p("Below is a visualization of how eigenvector centrality is calculated in opposition to the radii
+                           tags$p("Below is a visualization and network showing how eigenvector centrality is calculated in opposition to the radii
                                   of power."),
                            div(img(src = "eig_ex1.png", height = 350, width = 550), style="text-align: center;"),
                            tags$br(),
@@ -122,41 +121,47 @@ ui <- fluidPage(
                   tabPanel("Statistical Significance",
                            h4("Is the selected variable significant on measures of network centrality?"),
                            tags$p("While the 'Explanation of Network Centrality' tab explains the two types of centrality
-                                  used in the analysis of the 116th congressional committee network, this tab uses statistical
+                                  used in this analysis of the 116th congressional committee network, this tab uses statistical
                                   methods to determine if the difference in centrality score by either gender, leadership position,
                                   or political party is statistically significant."),
                            tags$br(),
-                           tags$p("To begin, we look at a boxplot of the two centrality measures by the variable of interest.
+                           tags$p("To begin, we look at a boxplot of the two centrality measures plotted by the variable of interest.
                                   Do you see a difference in the median scores of each group? Are there any outliers that stand
                                   out to you? Also, take note of the NA option—as explained in 'Static Network,' the data used
-                                  comes from folks who used Congresspeople's websites to determine information. On occassion,
-                                  they were not sure, and coded that person with an NA."),
+                                  comes from folks who used Congresspeople's websites to determine information. On occassion
+                                  they were not sure, and thus coded that person with an NA value."),
                            tags$br(),
                            plotOutput(outputId = "boxplot"),
                            tags$br(),
-                           tags$p("Now, to test if the two categories have a statistically significant difference from one another,
-                                  the app runs a t test. This is essentially a fancy way of saying the computer will find the PROBABILITY
-                                  of the results we found having varied by change. It finds the average difference between both measures
-                                  of centrality for the two categories (gender, leadership, or party), then decides if that average is
-                                  high enough to mean there is a REAL relationship between the variable and the centrality measures.
-                                  The probability that the difference found means that there is truly a relationship between the variables—
-                                  or that the more 'interesting,' alternative possibility is true—is represented through the p-value."),
+                           tags$p("Now, to test if the two categories have a statistically significant difference from each another,
+                                  the app runs a t test. This is just a fancy way to say the computer will find the PROBABILITY
+                                  that the centrality results caulcuated vary by the selected variable by chance. It finds the average 
+                                  difference between both measures
+                                  of centrality for the two categories (either gender, leadership, or party), then decides if that average is
+                                  high enough to mean there is a SIGNIFICANT, real relationship between the variable and the 
+                                  centrality measures.
+                                  The probability that the difference found proves that there is truly a relationship between the variables—
+                                  or that the more 'interesting,' alternative possibility is true—is represented through the p-value. The lower
+                                  it is, the more likely it is that this is the case."),
                            tags$br(),
                            tags$p("How small a p-value must be before it is significant differs by discipline. For our purposes, let us say
-                                  that any p-value under 0.15 is significant enough to conclude a relationship between the factor of interest
-                                  and a congressperson's centrality in the network. How many configurations have significant results? Are they
+                                  that any p-value under 0.15 is significant enough to reject the notion that there is no relationship and 
+                                  conclude that gender, leadership, or political party impacts
+                                  a congressperson's centrality in the network. How many configurations have significant results? Are they
                                   what you would expect to see?"),
                            tags$br(),
                            dataTableOutput(outputId = "t_test_table"),
                            tags$br(),
-                           tags$p("Other values included in the table are the t (the statistic calculated from the t-test, which is used to calculate
-                                  the p-value using a standardized t distribution. Think of it as the cutoff point, where everything above it is added
+                           tags$p("Other values included in the table is the test statistic, or t. This is the statistic calculated from the t-test, 
+                                  which is used to calculate
+                                  the p-value using a standardized t distribution. Think of this as the cutoff point, where everything above it is added
                                   together to find the probability! For instance, later in the evening you're probably more hungry,
-                                  and thus are MORE LIKELY to eat dinner. The t is like this as well—as the t increases in size,
+                                  and thus are MORE LIKELY to eat dinner (or a midnight snack!). The t is like this as well—as the t increases in magnitude,
                                   the relationship between centrality and the selected variable of interest is MORE LIKELY to be significant!). 
                                   The confidence interval is the range of values that we are 95% confident contain the true
                                   difference in centrality measures between the two categories. We choose a 95% confience value here, as we
-                                  can never be 100% confident (otherwise the interval range would have to include all possible values!)")),
+                                  can never be 100% confident (otherwise the interval range would have to include all possible values!). 95% provides
+                                  a good balance between both accuracy and precision for the interval.")),
                   tabPanel("Interactive Network",
                            h4("An interactive network, modeled using "),
                            tags$code("networkD3"),
@@ -165,7 +170,7 @@ ui <- fluidPage(
                                   Additionally, you can move around any of the nodes and watch the network reform around it."),
                            tags$br(),
                            tags$em("A word of caution: with large amounts of nodes, the graph may move slowly as it tries to plot
-                                   all of the nodes. It works best with less congressfolk, and with patience."),
+                                   all of the nodes. It works best with less congressfolk and patience."),
                            tags$br(),
                            forceNetworkOutput(outputId = "interactive")),
                   tabPanel("Sources",
@@ -181,13 +186,18 @@ ui <- fluidPage(
                                   as without their help I certainly would not have been able to pull this off! Jesse Sadler's", 
                                   tags$a(href="https://www.jessesadler.com/post/network-analysis-with-r/", "blog post"), "was
                                   a huge help in figuring out how to create nodes and edges from a dataframe, and helped me create
-                                  the interactive network using", tags$code("NetworkD3"), "For resources about using",
-                                  tags$code("statnet"), "and", tags$code("ade4"), "to turning a two-mode network into a one-mode,
+                                  the interactive network using", tags$code("NetworkD3"), "For resources about how to use",
+                                  tags$code("statnet"), "and", tags$code("ade4"), "to turn a two-mode network into a one-mode,
                                   calculate measures of network centrality, and graph by color", tags$a(href="http://www.kateto.net/wp-content/uploads/2019/06/Sunbelt%202019%20R%20Network%20Visualization%20Workshop.pdf",
                                   "this site"), "written by Katherine Ognyanova and", tags$a(href="https://rpubs.com/pjmurphy/542335", "this site"), "
                                   written by Phil Murphy and",
                                   tags$a(href="https://www.uni-due.de/hummell/man/sna/.sna.gplot.pdf", "this site"), "created by Melissa Clarkson 
-                                  were invaluable. I encourage you to check out their work!")))
+                                  were invaluable. I encourage you to check out their work!"),
+                           tags$br(),
+                           tags$p("And of course, I would be remiss if I did not acknowledge the wonderful work Kelly McConville, my lovely data science
+                                  professor, has done to help cultivate my skills in visualization, wrangling, and data analysis this semester!
+                                  Many thanks to my fellow classmates as well for all of your help in the Slack and being a positive, welcoming
+                                  virtual community this semester!")))
     )
   )
 )
