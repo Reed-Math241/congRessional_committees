@@ -168,7 +168,24 @@ congressperson_affiliation <- congressperson_affiliation %>%
          gender_color = gender.y,
          name = name.x) %>%
   mutate(type = case_when(type == "house" ~ "House",
-                          type == "senate" ~ "Senate"))
+                          type %in% c("senate", "joint") ~ "Senate"))
+
+congressperson_affiliation %>%
+  select(gender_bin, type, party_bin, name, title_bin) %>%
+  mutate(gender_bin = case_when(gender_bin == 1 ~ "Woman",
+                                gender_bin == 0 ~ "Man"),
+         party_bin = case_when(party_bin == 1 ~ "Democrat",
+                               party_bin == 0 ~ "Republican"),
+         title_bin = case_when((party_bin == "Democrat" & title_bin == 1) ~ "Ranking Member",
+                               (party_bin == "Republican" & title_bin == 1) ~ "Committee Chair",
+                               (title_bin == 0) ~ "No Leadership Position")) %>%
+  rename(Gender = gender_bin,
+         Chamber = type,
+         Political_Party = party_bin,
+         Name = name,
+         Leadership_Position = title_bin) %>%
+  select(Name, everything()) %>%
+  arrange(Name)
 
 # ROBIN USE THIS CODE TO CONVERT THE ROW IN THE DATAFRAME TO A VECTOR TO USE IN THE GRAPHY GRAPH
 leadership_colors <- congressperson_affiliation[['title_color']]
@@ -297,11 +314,6 @@ congressperson_affiliation2 <- inner_join(congressperson_affiliation, congress_c
 t.test(congress_deg ~ party_bin, data = congressperson_affiliation2)
 t.test(congress_eig ~ party_bin, data = congressperson_affiliation2)
 
-# Would you look at that gender_bin only has two categories!!! :(
-congressperson_affiliation2 %>%
-  group_by(gender_bin) %>%
-  summarize(n())
-
 # Save into dataframe
 library(broom)
 gender_deg <- tidy(t.test(congress_deg ~ gender_bin, data = congressperson_affiliation2))
@@ -325,9 +337,19 @@ node_list
 nodes_d3 <- mutate(congressperson_affiliation, id = id - 1)
 edges_d3 <- mutate(edges, source = source - 1, target = target - 1)
 
+ColourScale <- 'd3.scaleOrdinal()
+            .domain(["blue", "pink2"])
+           .range(["blue", "pink"]);'
+
 forceNetwork(Links = edges_d3, Nodes = nodes_d3, Source = "source", Target = "target", 
              NodeID = "name", Group = "gender_color", Value = "corr", 
-             opacity = 1, fontSize = 16, zoom = TRUE)
+             opacity = 1, fontSize = 16, zoom = TRUE, colourScale = JS(ColourScale))
 ?forceNetwork
+```
+
+```{r}
+# Code to show what Eigenvector centrality is:
+
+detach("package:igraph", unload=TRUE)
 ```
 

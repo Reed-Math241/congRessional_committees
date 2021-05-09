@@ -357,7 +357,7 @@ id,gender_bin,gender_color,type,party_bin,party_color,name,title_bin,title_color
 356,0,blue,House,0,red,Patrick Meehan,0,gray
 357,0,blue,House,0,red,Kenny Marchant,0,gray
 358,0,blue,House,1,blue,John B. Larson,0,gray
-359,0,blue,NA,0,red,Kevin Brady,1,purple
+359,0,blue,Senate,0,red,Kevin Brady,1,purple
 360,0,blue,House,0,red,Sam Johnson,0,gray
 361,0,blue,House,0,red,Patrick J. Tiberi,0,gray
 362,0,blue,House,0,red,David G. Reichert,0,gray
@@ -382,35 +382,35 @@ id,gender_bin,gender_color,type,party_bin,party_color,name,title_bin,title_color
 381,0,blue,House,1,blue,Ron Kind,0,gray
 382,0,blue,House,1,blue,Joseph Crowley,0,gray
 383,0,blue,House,1,blue,Danny K. Davis,0,gray
-384,0,blue,NA,0,red,Roger F. Wicker,NA,NA
-385,0,blue,NA,0,red,Richard Burr,0,gray
-386,0,blue,NA,0,red,John Boozman,0,gray
-387,0,blue,NA,1,blue,Benjamin L. Cardin,0,gray
-388,0,blue,NA,1,blue,Sheldon Whitehouse,0,gray
-389,0,blue,NA,1,blue,Tom Udall,0,gray
-390,1,pink2,NA,1,blue,Jeanne Shaheen,0,gray
-391,0,blue,NA,0,red,Robert Aderholt,0,gray
-392,0,blue,NA,0,red,Mike Lee,0,gray
-393,0,blue,NA,0,red,Tom Cotton,0,gray
-394,0,blue,NA,0,red,Ben Sasse,0,gray
-395,0,blue,NA,0,red,Ted Cruz,0,gray
-396,0,blue,NA,0,red,Bill Cassidy,0,gray
-397,1,pink2,NA,1,blue,Amy Klobuchar,0,gray
-398,0,blue,NA,1,blue,"Robert P. Casey, Jr.",0,gray
-399,0,blue,NA,1,blue,Martin Heinrich,0,gray
-400,0,blue,NA,1,blue,Gary C. Peters,0,gray
-401,0,blue,NA,0,red,Roy Blunt,NA,NA
-402,0,blue,NA,0,red,Pat Roberts,0,gray
-403,1,pink2,NA,0,red,Shelley Moore Capito,0,gray
-404,0,blue,NA,1,blue,Charles E. Schumer,0,gray
-405,0,blue,NA,1,blue,Patrick J. Leahy,0,gray
-406,0,blue,NA,0,red,Orrin G. Hatch,NA,NA
-407,0,blue,NA,0,red,Chuck Grassley,0,gray
-408,0,blue,NA,0,red,Mike Crapo,0,gray
-409,0,blue,NA,1,blue,Ron Wyden,0,gray
-410,1,pink2,NA,1,blue,Debbie Stabenow,0,gray
-411,0,blue,NA,0,red,Paul Ryan,NA,NA
-412,0,blue,NA,1,blue,Sander Levin,0,gray
+384,0,blue,Senate,0,red,Roger F. Wicker,NA,NA
+385,0,blue,Senate,0,red,Richard Burr,0,gray
+386,0,blue,Senate,0,red,John Boozman,0,gray
+387,0,blue,Senate,1,blue,Benjamin L. Cardin,0,gray
+388,0,blue,Senate,1,blue,Sheldon Whitehouse,0,gray
+389,0,blue,Senate,1,blue,Tom Udall,0,gray
+390,1,pink2,Senate,1,blue,Jeanne Shaheen,0,gray
+391,0,blue,Senate,0,red,Robert Aderholt,0,gray
+392,0,blue,Senate,0,red,Mike Lee,0,gray
+393,0,blue,Senate,0,red,Tom Cotton,0,gray
+394,0,blue,Senate,0,red,Ben Sasse,0,gray
+395,0,blue,Senate,0,red,Ted Cruz,0,gray
+396,0,blue,Senate,0,red,Bill Cassidy,0,gray
+397,1,pink2,Senate,1,blue,Amy Klobuchar,0,gray
+398,0,blue,Senate,1,blue,"Robert P. Casey, Jr.",0,gray
+399,0,blue,Senate,1,blue,Martin Heinrich,0,gray
+400,0,blue,Senate,1,blue,Gary C. Peters,0,gray
+401,0,blue,Senate,0,red,Roy Blunt,NA,NA
+402,0,blue,Senate,0,red,Pat Roberts,0,gray
+403,1,pink2,Senate,0,red,Shelley Moore Capito,0,gray
+404,0,blue,Senate,1,blue,Charles E. Schumer,0,gray
+405,0,blue,Senate,1,blue,Patrick J. Leahy,0,gray
+406,0,blue,Senate,0,red,Orrin G. Hatch,NA,NA
+407,0,blue,Senate,0,red,Chuck Grassley,0,gray
+408,0,blue,Senate,0,red,Mike Crapo,0,gray
+409,0,blue,Senate,1,blue,Ron Wyden,0,gray
+410,1,pink2,Senate,1,blue,Debbie Stabenow,0,gray
+411,0,blue,Senate,0,red,Paul Ryan,NA,NA
+412,0,blue,Senate,1,blue,Sander Levin,0,gray
 413,0,blue,Senate,0,red,John Cornyn,0,gray
 414,0,blue,Senate,0,red,James E. Risch,0,gray
 415,0,blue,Senate,0,red,Jeff Sessions,0,gray
