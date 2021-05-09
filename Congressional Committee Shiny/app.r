@@ -148,7 +148,7 @@ ui <- fluidPage(
                                   that any p-value under 0.15 is significant enough to reject the notion that there is no relationship and 
                                   conclude that gender, leadership, or political party impacts
                                   a congressperson's centrality in the network. How many configurations have significant results? Are they
-                                  what you would expect to see?"),
+                                  what you would expect to see? (see the bottom of this page for some hints!)"),
                            tags$br(),
                            dataTableOutput(outputId = "t_test_table"),
                            tags$br(),
@@ -157,11 +157,19 @@ ui <- fluidPage(
                                   the p-value using a standardized t distribution. Think of this as the cutoff point, where everything above it is added
                                   together to find the probability! For instance, later in the evening you're probably more hungry,
                                   and thus are MORE LIKELY to eat dinner (or a midnight snack!). The t is like this as well—as the t increases in magnitude,
-                                  the relationship between centrality and the selected variable of interest is MORE LIKELY to be significant!). 
+                                  the relationship between centrality and the selected variable of interest is MORE LIKELY to be significant!. 
                                   The confidence interval is the range of values that we are 95% confident contain the true
                                   difference in centrality measures between the two categories. We choose a 95% confience value here, as we
                                   can never be 100% confident (otherwise the interval range would have to include all possible values!). 95% provides
-                                  a good balance between both accuracy and precision for the interval.")),
+                                  a good balance between both accuracy and precision for the interval."),
+                           tags$br(),
+                           tags$em("Hints: Running the t tests and looking at the different combinations of variables of interest and different configuations
+                                  of chambers for the congresspeople, we observe that leadership and party are significant for members of the House,
+                                  while leadership and party is significant for everyone. Gender is significant only in the Senate, with women having
+                                   less centrality than men. In all instances of leadership and party, those with leadership positions had significantly more
+                                   centrality than those without leadership titles, while the Democrats had more centrality. Can you replicate these results?
+                                   How does this impact your thoughts about who has the most power in systems of governance? Do you think this imbalance of power
+                                   is fair in a democratic system?")),
                   tabPanel("Interactive Network",
                            h4("An interactive network, modeled using "),
                            tags$code("networkD3"),
