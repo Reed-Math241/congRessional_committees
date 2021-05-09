@@ -65,7 +65,7 @@ ui <- fluidPage(
                   tabPanel("Static Network",
                            plotOutput(outputId = "network"),
                            tags$em("The above static network graph is colored by the variable of interest selected
-                                  on the left For gender, the network is colored blue for men and pink for women.
+                                  on the left. For gender, the network is colored blue for men and pink for women.
                                   For leadership, those who have a title (Committee Chair or Ranking Member) are colored
                                   purple, while those without a title are colored gray. And lastly, Democrats are colored
                                   blue while Republicans are colored red."),
@@ -166,8 +166,10 @@ ui <- fluidPage(
                            tags$br(),
                            tags$em("Hints: Running the t tests and looking at the different combinations of variables of interest and different configuations
                                   of chambers for the congresspeople, we observe that leadership and party are significant for members of the House,
-                                  while leadership and party is significant for everyone. Gender is significant only in the Senate, with women having
-                                   less centrality than men. In all instances of leadership and party, those with leadership positions had significantly more
+                                  while leadership and party is significant for everyone. Gender is significant in the Senate for both centrality measures, 
+                                  with women having
+                                   less centrality than men, while it is only significant for eigenvector centrality in the House.
+                                   In all instances of leadership and party, those with leadership positions had significantly more
                                    centrality than those without leadership titles, while the Democrats had more centrality. Can you replicate these results?
                                    How does this impact your thoughts about who has the most power in systems of governance? Do you think this imbalance of power
                                    is fair in a democratic system?")),
