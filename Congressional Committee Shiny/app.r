@@ -38,6 +38,7 @@ congressperson_affiliation <- read_csv(here("Congressional Committee Shiny/congr
 
 # User interface
 ui <- fluidPage(
+  theme = shinytheme("cosmo"),
   titlePanel("116th Congress Congressional Committee Ties"),
   sidebarLayout(
     sidebarPanel(
@@ -63,7 +64,7 @@ ui <- fluidPage(
       tabsetPanel(type = "tabs",
                   tabPanel("Static Network",
                            plotOutput(outputId = "network"),
-                           tags$em("The above static network graphs are colored by the variable of interest selected
+                           tags$em("The above static network graph is colored by the variable of interest selected
                                   on the left For gender, the network is colored blue for men and pink for women.
                                   For leadership, those who have a title (Committee Chair or Ranking Member) are colored
                                   purple, while those without a title are colored gray. And lastly, Democrats are colored
@@ -202,7 +203,7 @@ ui <- fluidPage(
                                   tags$a(href="https://www.uni-due.de/hummell/man/sna/.sna.gplot.pdf", "this site"), "created by Melissa Clarkson 
                                   were invaluable. I encourage you to check out their work!"),
                            tags$br(),
-                           tags$p("And of course, I would be remiss if I did not acknowledge the wonderful work Kelly McConville, my lovely data science
+                           tags$p("And of course, I would be remiss if I did not acknowledge the work Kelly McConville, my lovely data science
                                   professor, has done to help cultivate my skills in visualization, wrangling, and data analysis this semester!
                                   Many thanks to my fellow classmates as well for all of your help in the Slack and being a positive, welcoming
                                   virtual community this semester!")))
