@@ -4,7 +4,11 @@ output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE
+)
 ```
 
 ```{r}
@@ -15,18 +19,16 @@ library(dplyr)
 library(tidyverse)
 library(stringr)
 library(statnet)
+library(networkD3)
 ```
 
 
 ## Loading the data
 
 ```{r}
-library(readr)
 committee_membership_current <- read_csv(here("Congressional Committee Shiny/committee-membership-current.csv"))
-View(committee_membership_current)
 
 committees_current <- read_csv(here("Congressional Committee Shiny/committees-current.csv"))
-View(committees_current)
 ```
 
 ## Make the column with the key in committees_current
@@ -40,7 +42,7 @@ committees_current2 <- committees_current %>%
                                ""))
 ```
 
-## Join the dataframes together by the key! :) Hasn't proved super useful?
+## Join the dataframes together by the key! :)
 
 ```{r}
 committees_current2 <- committees_current2 %>%
@@ -51,7 +53,7 @@ committees <- left_join(committee_membership_current, committees_current2, by = 
 ```
 
 
-## Set up the "edge list" (cheating a lil bit, as it is two mode and thus must have two distinct columns, but it works!)
+## Set up the "edge list"
 
 ```{r}
 congressperson <- committees %>%
@@ -76,16 +78,11 @@ node_list <- nodes %>%
   select(-committee)
 
 write_csv(node_list, file = "node_list.csv")
-
-
-#names(nodes) <- NULL
-#nodes
 ```
+
 ## Get affiliation data for gender
 
 ```{r}
-# Need to grab gender :(
-
 one16 <- read_csv("116_cong.csv")
 one16 <- one16 %>%
   rename(name = officialFullName)
@@ -113,7 +110,8 @@ congressperson_affiliation <- inner_join(congressperson_affiliation, gender_colo
 congressperson_affiliation <- congressperson_affiliation %>%
   select(-label.x, - label.y, -label)
 ```
-## Doing some thinking... where do I put this data? Load the committees csv + gender csv and copy + paste this code?
+
+## Adding the rest of the affilation data, besides gender, to the affilation dataframe
 
 ```{r}
 # Join from committees: party, rank, chamber (saved as "type" in committees_current), leadership (title)
@@ -170,7 +168,7 @@ congressperson_affiliation <- congressperson_affiliation %>%
   mutate(type = case_when(type == "house" ~ "House",
                           type %in% c("senate", "joint") ~ "Senate"))
 
-congressperson_affiliation %>%
+congressperson_affiliation_labels <- congressperson_affiliation %>%
   select(gender_bin, type, party_bin, name, title_bin) %>%
   mutate(gender_bin = case_when(gender_bin == 1 ~ "Woman",
                                 gender_bin == 0 ~ "Man"),
@@ -191,8 +189,7 @@ congressperson_affiliation %>%
 leadership_colors <- congressperson_affiliation[['title_color']]
 ```
 
-
-## Write to a csv
+## Write to a csv (for the app)
 ```{r, eval = FALSE}
 write_csv(nodes, file = "committee_edge_list.csv")
 write_csv(congressperson_affiliation, file = "congressperson_affiliation.csv")
@@ -200,14 +197,11 @@ write_csv(congressperson_affiliation, file = "congressperson_affiliation.csv")
 
 
 ## Turn it into a two mode network! (using `statnet`)
-
 ```{r}
 com <- read.csv("committee_edge_list.csv", 
                 #directed = FALSE,
                 skip = 1,
                 header = FALSE)
-
-head(com)
 
 # With the four line script, below, we are saving all the unique names from the first column (first mode) into an object called “mode1”, and all the unique names from the second column (second mode) into an object called “mode2”
 mode1 <- unique(com[,1])
@@ -221,6 +215,7 @@ net <- as.network(com,
                   bipartite=215,   # Number of nodes in the second mode (events)
                   directed=FALSE)
 
+# Static plot of the network
 gplot(net, usearrows = FALSE)
 ```
 
@@ -245,14 +240,7 @@ net2 <- as.network(matrix_prod, directed = FALSE)
 # edge.lwd changes the thickness of the edges by the number of them
 gplot(matrix_prod, vertex.col = leadership_colors, thresh = 1, jitter = TRUE, usearrows = FALSE, vertex.cex = 2)
 
-?gplot
 ```
-
-
-
-
-## Further options: use one of the methods detailed at the bottom of the instructions (Yule's Q, Pearson Correlation, **Jaccard Similarity**), then use tnet or statnet to calculate the measures. I have, however, hit a wall for the night and will finish this part up tomorrow :)
-- This can be done for my measures, and I can join the affiliation data to do the statistical calculations
 
 ## Centrality measures in `statnet`
 
@@ -266,20 +254,16 @@ bipartite_matrix <- as.matrix(net)  # Extract the matrix
 
 congressperson_jaccard <- dist.binary(t(bipartite_matrix), 
                                       method=1, upper=TRUE, 
-                                      diag = FALSE) # Method #1 is "Jaccard Index"
-#event_jaccard <- dist.binary(bipartite_matrix, 
- #                            method=1, upper=TRUE, 
-  #                           diag = FALSE) 
+                                      diag = FALSE) 
 
 congressperson_jaccard <- as.matrix(congressperson_jaccard)   
 diag(congressperson_jaccard) <- 0
 
-# women_jaccard          # Look at the matrix before you binarize
-congressperson_jaccard <- ifelse(congressperson_jaccard > 0.95, 1, 0)     # Binarize
+# Binarize
+congressperson_jaccard <- ifelse(congressperson_jaccard > 0.95, 1, 0)     
 
-# jaccard_women      # Take a look at the matrix if you like.
-
-jacc_congressperson <- as.network(congressperson_jaccard,    # Create a statnet network
+# Create a statnet network
+jacc_congressperson <- as.network(congressperson_jaccard,    
                                   directed = FALSE)
 gplot(jacc_congressperson,
       usearrows = FALSE, 
@@ -288,7 +272,7 @@ gplot(jacc_congressperson,
 ```
 
 ```{r}
-# Unsure why, but betweenness() and closeness() take a VERY long time to run/don't run.
+# Unsure why, but betweenness() and closeness() take a VERY long time to run/don't run D:
 IDs <- jacc_congressperson%v%"vertex.names"
 congress_deg  <- degree(jacc_congressperson)
 #congress_bet  <- betweenness(jacc_congressperson)
@@ -314,17 +298,17 @@ congressperson_affiliation2 <- inner_join(congressperson_affiliation, congress_c
 t.test(congress_deg ~ party_bin, data = congressperson_affiliation2)
 t.test(congress_eig ~ party_bin, data = congressperson_affiliation2)
 
-# Save into dataframe
+# Save into dataframe; do this in the app for ease of printing
 library(broom)
 gender_deg <- tidy(t.test(congress_deg ~ gender_bin, data = congressperson_affiliation2))
 
 # Definitely will also have to graph the results (boxplot of the centralization measures) so we know which one is higher :)
 ```
 
+## Making the data for the interactive graph using `networkD3`
 
 ```{r}
-# This is the one that works thus far:
-# m <- congressperson_jaccard
+# Make the matrix
 m <- matrix_prod
 idx = m > 0.001
 edges = data.frame(
@@ -332,7 +316,6 @@ edges = data.frame(
     target = col(m)[idx],
     corr = m[idx])
 
-library(networkD3)
 node_list
 nodes_d3 <- mutate(congressperson_affiliation, id = id - 1)
 edges_d3 <- mutate(edges, source = source - 1, target = target - 1)
@@ -344,12 +327,5 @@ ColourScale <- 'd3.scaleOrdinal()
 forceNetwork(Links = edges_d3, Nodes = nodes_d3, Source = "source", Target = "target", 
              NodeID = "name", Group = "gender_color", Value = "corr", 
              opacity = 1, fontSize = 16, zoom = TRUE, colourScale = JS(ColourScale))
-?forceNetwork
-```
-
-```{r}
-# Code to show what Eigenvector centrality is:
-
-detach("package:igraph", unload=TRUE)
 ```
 
